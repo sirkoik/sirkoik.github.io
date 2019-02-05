@@ -5,7 +5,7 @@
       body {
         background: tan;
         font-family: sans-serif;
-        font-size: 1.2em;
+        font-size: 3vh;
       }
       
       .flex-container {
@@ -21,28 +21,30 @@
       }
       
       .content {
-        padding: 0.2em;
+        padding: 3vh;
         width: 50%;
+        border: 5px solid green;
+        border-radius: 10px;
+        background: linear-gradient(to bottom right, white, tan);
       }
       
       .bigger {
-        font-size: 300%;
-      }
-      
-      a.cactus {
-        text-decoration: none;
+        font-size: 5vh;
       }
       
       a { color: green; }
       a:hover { background: navajowhite; }
+      a.cactus {
+        text-decoration: none;
+      }        
     </style>
   </head>
   <body>
-    <div class="flex-container">
+    <div class="flex-container fullsize">
       <div class="content">
-        <p>Welcome to Alexander Koik-Cestone's webpage.<!-- <a href="https://github.com/sirkoik">Check out my repositories.</a>--></p>
-        <p><span class="bigger"><a href="Alexander Koik-Cestone resume.pdf">CV / Resume</a></span> (PDF, 211 KB).</p>
-        <p>Last edited 2/5/2019. <a class="cactus" href="Alexander Koik-Cestone resume.pdf" title="Click here to open my resume as well">🌵</a></p>
+        <p>Welcome to<br/>Alexander Koik-Cestone's<br/>webpage.<!-- <a href="https://github.com/sirkoik">Check out my repositories.</a>--></p>
+        <p><span class="bigger"><a href="Alexander Koik-Cestone resume.pdf" title="Click or tap here to open my resume.">CV / Resume</a></span><br/>(PDF, 211 KB)</p>
+        <p>Last edited 2/5/2019. <a class="cactus" href="Alexander Koik-Cestone resume.pdf" title="Click or tap here to open my resume as well.">🌵</a></p>
       </div>
     </div>
   </body>
