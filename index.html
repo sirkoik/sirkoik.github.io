@@ -1,1 +1,51 @@
-Hello world
+<html>
+  <head>
+    <title>Alexander Koik-Cestone's webpage</title>
+    <style>
+      body {
+        background: tan;
+        font-family: sans-serif;
+        font-size: 3vh;
+      }
+      
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .fullsize {
+        position: fixed;
+        top: 0; right: 0;
+        bottom: 0; left: 0;
+      }
+      
+      .content {
+        padding: 3vh;
+        width: 50%;
+        border: 1vh solid green;
+        border-radius: 2vh;
+        background: linear-gradient(to bottom right, white, tan);
+      }
+      
+      .bigger {
+        font-size: 5vh;
+      }
+      
+      a { color: green; }
+      a:hover { background: navajowhite; }
+      a.cactus {
+        text-decoration: none;
+      }        
+    </style>
+  </head>
+  <body>
+    <div class="flex-container fullsize">
+      <div class="content">
+        <p>Welcome to<br/>Alexander Koik-Cestone's<br/>webpage.<!-- <a href="https://github.com/sirkoik">Check out my repositories.</a>--></p>
+        <p><span class="bigger"><a href="Alexander Koik-Cestone resume.pdf" title="Click or tap here to open my resume.">CV / Resume</a></span><br/>(PDF, 211 KB)</p>
+        <p>Last edited 2/5/2019. <a class="cactus" href="Alexander Koik-Cestone resume.pdf" title="Click here to open my resume as well">🌵</a></p>
+      </div>
+    </div>
+  </body>
+</html>
