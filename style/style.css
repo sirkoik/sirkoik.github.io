@@ -1,5 +1,7 @@
 body {
-    background: tan;
+    background-color: tan;
+    background-image: url("../images/Carnegiea_gigantea_near_Tucson_2.jpg"), linear-gradient(to bottom right, white, tan);
+    background-size: cover;
     font-family: sans-serif;
     font-size: 3vh;
 }
@@ -21,7 +23,7 @@ body {
     width: 50%;
     border: 1vh solid green;
     border-radius: 2vh;
-    background: linear-gradient(to bottom right, white, tan);
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.9), tan);
 }
 
 .bigger {
@@ -72,7 +74,7 @@ a.sm:hover {
 
     background: linear-gradient(to bottom right, lime, forestgreen);
     color: white;
-    border-color: yellow;
+    border-color: white;
 }
 
 .big-button:active {
