@@ -1,9 +1,9 @@
 const VERSION = 1.0;
-const LAST_UPDATED = 'May 18 2019 11:45 AM';
+const LAST_UPDATED = 'May 18 2019 11:47 AM';
 
 var skHome = new function() {
     
-    // populate the time stamp fiold with a locale-friendly, concisely-formatted date and time.
+    // populate the time stamp field with a locale-friendly, concisely-formatted date and time.
     this.populateTS = function() {
         var dateUpdated = new Date(LAST_UPDATED);
         var options = {
