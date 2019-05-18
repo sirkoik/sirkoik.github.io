@@ -83,3 +83,15 @@ a.sm:hover {
     color: chartreuse;
     border-color: yellow;            
 }
+
+.footer-cactus {
+    float: right;
+    font-size: 50%;
+    margin-left: 0.2vh;
+}
+
+.footer-text {
+    float:right;
+    font-size:50%;
+    margin-top:-0.3vh;
+}
