@@ -1,5 +1,5 @@
 const VERSION = 1.0;
-const LAST_UPDATED = 1558136678052; // timestamp
+const LAST_UPDATED = 'May 18 2019 11:25 AM';
 
 var skHome = new function() {
     
@@ -21,4 +21,14 @@ var skHome = new function() {
 
 window.onload = function() {
     skHome.populateTS();
+    
+    document.querySelector('.pane-2-link').addEventListener('click', function() {
+        document.querySelector('.pane-1').style.display = 'none';
+        document.querySelector('.pane-2').style.display = 'block';
+    });
+    
+    document.querySelector('.pane-1-link').addEventListener('click', function() {
+        document.querySelector('.pane-2').style.display = 'none';
+        document.querySelector('.pane-1').style.display = 'block';
+    });    
 }

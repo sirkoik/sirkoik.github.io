@@ -27,6 +27,10 @@ body {
     box-shadow: 0.5vh 0.5vh 2vh black;
 }
 
+.pane-2 {
+    display: none;
+}
+
 .bigger {
     font-size: 4.5vh;
 }
@@ -40,6 +44,7 @@ a.cactus {
 a.sm {
     display: inline-block;
     
+    border-radius: 5vh;
     width: 7vh;
     height: 7vh;
     border: 0;
