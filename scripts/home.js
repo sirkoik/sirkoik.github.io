@@ -34,9 +34,21 @@ var skHome = new function() {
         
         pane2Link.innerHTML = 'More...';
     }
+    
+    // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
+    this.loadBg = function() {
+        var background = new Image();
+        var src = 'images/Carnegiea_gigantea_near_Tucson_2.jpg';
+        background.src = src;
+        background.onload = function() {
+            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
+            document.querySelector('.bg-loading').style.display = 'none';
+        }
+    }
 }
 
 window.onload = function() {
     skHome.populateTS();
     skHome.activatePanels();
+    skHome.loadBg();
 }
