@@ -1,5 +1,5 @@
 const VERSION = 1.0;
-const LAST_UPDATED = 'May 18 2019 11:25 AM';
+const LAST_UPDATED = 'May 18 2019 11:45 AM';
 
 var skHome = new function() {
     
@@ -17,18 +17,26 @@ var skHome = new function() {
         date = date.replace(',', '');
         document.getElementById('edit_timestamp').innerHTML = date; 
     }
+    
+    // activate the panel link event listeners.
+    this.activatePanels = function() {
+        var pane2Link = document.querySelector('.pane-2-link');
+
+        pane2Link.addEventListener('click', function() {
+            document.querySelector('.pane-1').style.display = 'none';
+            document.querySelector('.pane-2').style.display = 'block';
+        });
+
+        document.querySelector('.pane-1-link').addEventListener('click', function() {
+            document.querySelector('.pane-2').style.display = 'none';
+            document.querySelector('.pane-1').style.display = 'block';
+        });
+        
+        pane2Link.innerHTML = 'More...';
+    }
 }
 
 window.onload = function() {
     skHome.populateTS();
-    
-    document.querySelector('.pane-2-link').addEventListener('click', function() {
-        document.querySelector('.pane-1').style.display = 'none';
-        document.querySelector('.pane-2').style.display = 'block';
-    });
-    
-    document.querySelector('.pane-1-link').addEventListener('click', function() {
-        document.querySelector('.pane-2').style.display = 'none';
-        document.querySelector('.pane-1').style.display = 'block';
-    });    
+    skHome.activatePanels();
 }
