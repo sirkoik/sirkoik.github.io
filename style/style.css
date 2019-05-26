@@ -100,3 +100,7 @@ a.sm:hover {
     font-size:50%;
     margin-top:-0.3vh;
 }
+
+.icon-link {
+    text-decoration: none;
+}
