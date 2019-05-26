@@ -37,7 +37,7 @@ var skHome = new function() {
         
         
         // on audio load
-        document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
+        //document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
             // make title clickable / tappable
             document.querySelector('.name-click').addEventListener('click', function() {
                 for (el of document.querySelectorAll('.name-phonetic')) {
@@ -49,7 +49,7 @@ var skHome = new function() {
             });
             
             document.querySelector('.name-click').textContent = 'Alexander Koik-Cestone 🔊';
-        });
+        //});
     }
     
     // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
