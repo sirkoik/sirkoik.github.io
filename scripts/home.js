@@ -39,7 +39,9 @@ var skHome = new function() {
         document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
             // make title clickable / tappable
             document.querySelector('.name-click').addEventListener('click', function() {
-                document.querySelector('.name-phonetic').classList.remove('hidden');
+                for (el of document.querySelectorAll('.name-phonetic')) {
+                    el.classList.remove('hidden');
+                }
                 var audioEl = document.getElementById('pronounce-name');
                 //if (audioEl.ended) audioEl.play();
                 audioEl.play();
