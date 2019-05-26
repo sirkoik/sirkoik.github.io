@@ -1,5 +1,5 @@
-const VERSION = '1.0.1';
-const LAST_UPDATED = 'May 26 2019 03:34 AM';
+const VERSION = '1.0.1a';
+const LAST_UPDATED = 'May 26 2019 03:55 AM';
 
 var skHome = new function() {
     
@@ -35,11 +35,19 @@ var skHome = new function() {
         pane2Link.innerHTML = 'More...';
         
         
-        document.querySelector('.name-click').addEventListener('click', function() {
-            document.querySelector('.name-phonetic').classList.toggle('hidden');
-            var audioEl = document.getElementById('pronounce-name');
-            //if (audioEl.ended) audioEl.play();
-            audioEl.play();
+        // on audio load
+        document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
+            document.querySelector('.audio').textContent = '🔊';
+            
+            // make title clickable / tappable
+            document.querySelector('.name-click').addEventListener('click', function() {
+                document.querySelector('.name-phonetic').classList.toggle('hidden');
+                var audioEl = document.getElementById('pronounce-name');
+                //if (audioEl.ended) audioEl.play();
+                audioEl.play();
+            });
+            
+            
         });
     }
     
