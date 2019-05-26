@@ -64,8 +64,9 @@ var skHome = new function() {
     }
 }
 
-window.onload = function() {
+// DOM-dependent functions
+window.addEventListener('DOMContentLoaded', (event) => {
     skHome.populateTS();
     skHome.loadEvents();
     skHome.loadBg();
-}
+});
