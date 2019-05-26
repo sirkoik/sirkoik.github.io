@@ -1,4 +1,4 @@
-const VERSION = 1.0.1;
+const VERSION = '1.0.1';
 const LAST_UPDATED = 'May 26 2019 03:17 AM';
 
 var skHome = new function() {
