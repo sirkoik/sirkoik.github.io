@@ -37,17 +37,15 @@ var skHome = new function() {
         
         // on audio load
         document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
-            document.querySelector('.audio').textContent = '🔊';
-            
             // make title clickable / tappable
             document.querySelector('.name-click').addEventListener('click', function() {
-                document.querySelector('.name-phonetic').classList.toggle('hidden');
+                document.querySelector('.name-phonetic').classList.remove('hidden');
                 var audioEl = document.getElementById('pronounce-name');
                 //if (audioEl.ended) audioEl.play();
                 audioEl.play();
             });
             
-            
+            document.querySelector('.name-click').textContent = 'Alexander Koik-Cestone 🔊';
         });
     }
     
