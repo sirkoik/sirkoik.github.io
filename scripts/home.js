@@ -1,5 +1,5 @@
-const VERSION = 1.0;
-const LAST_UPDATED = 'May 26 2019 02:20 AM';
+const VERSION = 1.0.1;
+const LAST_UPDATED = 'May 26 2019 03:17 AM';
 
 var skHome = new function() {
     
@@ -15,11 +15,11 @@ var skHome = new function() {
         };
         var date = dateUpdated.toLocaleDateString(dateUpdated, options);
         date = date.replace(',', '');
-        document.getElementById('edit_timestamp').innerHTML = date; 
+        document.getElementById('edit_timestamp').textContent = date;
     }
     
     // activate the panel link event listeners.
-    this.activatePanels = function() {
+    this.loadEvents = function() {
         var pane2Link = document.querySelector('.pane-2-link');
 
         pane2Link.addEventListener('click', function() {
@@ -33,6 +33,14 @@ var skHome = new function() {
         });
         
         pane2Link.innerHTML = 'More...';
+        
+        
+        document.querySelector('.name-click').addEventListener('click', function() {
+            document.querySelector('.name-phonetic').classList.toggle('hidden');
+            var audioEl = document.getElementById('pronounce-name');
+            //if (audioEl.ended) audioEl.play();
+            audioEl.play();
+        });
     }
     
     // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
@@ -41,7 +49,7 @@ var skHome = new function() {
         var src = 'images/Carnegiea_gigantea_near_Tucson_2.jpg';
         background.src = src;
         background.onload = function() {
-            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
+            document.body.style.backgroundImage = 'url("'+src+'")';
             document.querySelector('.bg-loading').style.display = 'none';
         }
     }
@@ -49,6 +57,6 @@ var skHome = new function() {
 
 window.onload = function() {
     skHome.populateTS();
-    skHome.activatePanels();
+    skHome.loadEvents();
     skHome.loadBg();
 }

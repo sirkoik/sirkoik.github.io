@@ -104,3 +104,11 @@ a.sm:hover {
 .icon-link {
     text-decoration: none;
 }
+
+.name-click {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
