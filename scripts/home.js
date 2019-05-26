@@ -1,6 +1,7 @@
-const VERSION = '1.0.1a';
-const LAST_UPDATED = 'May 26 2019 03:55 AM';
+const VERSION = '1.0.1b';
+const LAST_UPDATED = 'May 26 2019 04:21 AM';
 
+//skHome (SirKoik Home) object
 var skHome = new function() {
     
     // populate the time stamp field with a locale-friendly, concisely-formatted date and time.
