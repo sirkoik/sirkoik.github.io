@@ -1,5 +1,5 @@
 const VERSION = '1.0.2';
-const LAST_UPDATED = 'June 4 2019 05:34 AM';
+const LAST_UPDATED = 'June 4 2019 05:40 AM';
 
 //skHome (SirKoik Home) object
 var skHome = new function() {
@@ -20,21 +20,24 @@ var skHome = new function() {
     }
     
     // activate the panel link event listeners.
+    var pane2Active = false;
     this.loadEvents = function() {
         var pane2Link = document.querySelector('.pane-2-link');
 
         pane2Link.addEventListener('click', function() {
             //document.querySelector('.pane-1').style.display = 'none';
-            this.style.display = 'none';
-            document.querySelector('.pane-2').style.display = 'block';
+            if (pane2Active) {
+                document.querySelector('.pane-2').style.display = 'none';
+                pane2Link.textContent = 'More...';
+            } else {
+                document.querySelector('.pane-2').style.display = 'block';
+                pane2Link.textContent = 'Less...';                
+            }
+            
+            pane2Active = !pane2Active;
         });
-
-/*        document.querySelector('.pane-1-link').addEventListener('click', function() {
-            document.querySelector('.pane-2').style.display = 'none';
-            document.querySelector('.pane-1').style.display = 'block';
-        });*/
         
-        pane2Link.innerHTML = 'More...';
+        pane2Link.textContent = 'More...';
         
         
         // on audio load
