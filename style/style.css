@@ -1,7 +1,7 @@
 body {
-    background-color: tan;
     background: linear-gradient(to bottom right, white, tan);
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: sans-serif;
     font-size: 3vh;
 }
@@ -97,7 +97,7 @@ a.sm:hover {
 
 .footer-text {
     float:right;
-    font-size:50%;
+    font-size: 50%;
     margin-top:-0.3vh;
 }
 

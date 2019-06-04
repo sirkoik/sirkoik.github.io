@@ -1,5 +1,5 @@
-const VERSION = '1.0.1b';
-const LAST_UPDATED = 'May 26 2019 04:21 AM';
+const VERSION = '1.0.2';
+const LAST_UPDATED = 'June 4 2019 05:34 AM';
 
 //skHome (SirKoik Home) object
 var skHome = new function() {
@@ -24,14 +24,15 @@ var skHome = new function() {
         var pane2Link = document.querySelector('.pane-2-link');
 
         pane2Link.addEventListener('click', function() {
-            document.querySelector('.pane-1').style.display = 'none';
+            //document.querySelector('.pane-1').style.display = 'none';
+            this.style.display = 'none';
             document.querySelector('.pane-2').style.display = 'block';
         });
 
-        document.querySelector('.pane-1-link').addEventListener('click', function() {
+/*        document.querySelector('.pane-1-link').addEventListener('click', function() {
             document.querySelector('.pane-2').style.display = 'none';
             document.querySelector('.pane-1').style.display = 'block';
-        });
+        });*/
         
         pane2Link.innerHTML = 'More...';
         
@@ -58,8 +59,8 @@ var skHome = new function() {
         var src = 'images/Carnegiea_gigantea_near_Tucson_2.jpg';
         background.src = src;
         background.onload = function() {
-            document.body.style.backgroundImage = 'url("'+src+'")';
-            document.querySelector('.bg-loading').style.display = 'none';
+            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
+            document.querySelector('.bg-loading').classList.add('hidden');
         }
     }
 }
