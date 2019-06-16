@@ -59,7 +59,7 @@ var skHome = new function() {
     // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
     this.loadBg = function() {
         var background = new Image();
-        var src = 'images/Carnegiea_gigantea_near_Tucson_2.jpg';
+        var src = 'images/Carnegiea_gigantea_near_Tucson_2-small.jpg';
         background.src = src;
         background.onload = function() {
             document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';

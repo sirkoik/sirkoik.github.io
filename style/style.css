@@ -20,11 +20,23 @@ body {
 
 .content {
     padding: 3vh;
-    width: 50%;
+    width: 80%;
     border: 1vh solid green;
     border-radius: 2vh;
     background: linear-gradient(to bottom right, rgba(255,255,255,0.9), tan);
     box-shadow: 0.5vh 0.5vh 2vh black;
+}
+
+@media screen and (orientation: landscape) {
+    .content {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        width: 50%;
+    }
 }
 
 .pane-2 {
