@@ -2,6 +2,7 @@
 
 ## Improvements
 * Make better list of projects on main page.
+* Weather API
 
 ## Things that need to be uploaded
 * Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
