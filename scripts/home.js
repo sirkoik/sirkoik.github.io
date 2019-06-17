@@ -62,7 +62,8 @@ var skHome = new function() {
         var src = 'images/Carnegiea_gigantea_near_Tucson_2-small.jpg';
         background.src = src;
         background.onload = function() {
-            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
+//            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
+            document.querySelector('.flex-container').style.backgroundImage = 'url("'+src+'")';
             document.querySelector('.bg-loading').classList.add('hidden');
         }
     }

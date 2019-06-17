@@ -1,15 +1,22 @@
 body {
-    background: linear-gradient(to bottom right, white, tan);
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: sans-serif;
     font-size: 3vh;
 }
 
 .flex-container {
+    background: linear-gradient(to bottom right, white, tan);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.flex-container::webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .fullsize {
