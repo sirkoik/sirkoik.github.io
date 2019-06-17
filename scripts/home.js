@@ -1,5 +1,5 @@
 const VERSION = '1.0.3';
-const LAST_UPDATED = 'June 17 2019 12:25 AM';
+const LAST_UPDATED = 'June 17 2019 12:26 AM';
 
 //skHome (SirKoik Home) object
 var skHome = new function() {
@@ -69,9 +69,12 @@ var skHome = new function() {
     }
 }
 
-// DOM-dependent functions
-window.addEventListener('DOMContentLoaded', (event) => {
+window.onload = function() {
     skHome.populateTS();
-    skHome.loadEvents();
+    skHome.loadEvents();    
+}
+
+// Try to load background last.
+window.addEventListener('DOMContentLoaded', (event) => {
     skHome.loadBg();
 });
