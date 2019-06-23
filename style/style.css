@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     font-size: 3vh;
+    overflow: hidden;
 }
 
 .flex-container {
@@ -11,12 +12,6 @@ body {
     align-items: center;
     
     overflow-y: scroll;
-    scrollbar-width: none;
-}
-
-.flex-container::webkit-scrollbar {
-    width: 0;
-    height: 0;
 }
 
 .fullsize {

@@ -1,11 +1,11 @@
-const VERSION = '1.0.3';
-const LAST_UPDATED = 'June 17 2019 12:26 AM';
+const VERSION = '1.0.4';
+const LAST_UPDATED = 'June 23 2019 11:15 AM';
 
-//skHome (SirKoik Home) object
-var skHome = new function() {
-    
+//SkHome (SirKoik Home) object
+var SkHome = new function() {
+    // SkHome.populateTS
     // populate the time stamp field with a locale-friendly, concisely-formatted date and time.
-    this.populateTS = function() {
+    this.populateTS = () => {
         var dateUpdated = new Date(LAST_UPDATED);
         var options = {
             month:  'numeric', 
@@ -19,13 +19,13 @@ var skHome = new function() {
         document.getElementById('edit_timestamp').textContent = date;
     }
     
+    // SkHome.loadEvents
     // activate the panel link event listeners.
     var pane2Active = false;
-    this.loadEvents = function() {
+    this.loadEvents = () => {
         var pane2Link = document.querySelector('.pane-2-link');
 
-        pane2Link.addEventListener('click', function() {
-            //document.querySelector('.pane-1').style.display = 'none';
+        pane2Link.addEventListener('click', () => {
             if (pane2Active) {
                 document.querySelector('.pane-2').style.display = 'none';
                 pane2Link.textContent = 'More...';
@@ -43,7 +43,7 @@ var skHome = new function() {
         // on audio load
         //document.getElementById('pronounce-name').addEventListener('canplaythrough', function() {
             // make title clickable / tappable
-            document.querySelector('.name-click').addEventListener('click', function() {
+            document.querySelector('.name-click').addEventListener('click', () => {
                 for (el of document.querySelectorAll('.name-phonetic')) {
                     el.classList.remove('hidden');
                 }
@@ -56,12 +56,13 @@ var skHome = new function() {
         //});
     }
     
+    // SkHome.loadBg
     // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
-    this.loadBg = function() {
+    this.loadBg = () => {
         var background = new Image();
         var src = 'images/Carnegiea_gigantea_near_Tucson_2-small.jpg';
         background.src = src;
-        background.onload = function() {
+        background.onload = () => {
 //            document.getElementsByTagName('body')[0].style.backgroundImage = 'url("'+src+'")';
             document.querySelector('.flex-container').style.backgroundImage = 'url("'+src+'")';
             document.querySelector('.bg-loading').classList.add('hidden');
@@ -69,12 +70,12 @@ var skHome = new function() {
     }
 }
 
-window.onload = function() {
-    skHome.populateTS();
-    skHome.loadEvents();    
+window.onload = () => {
+    SkHome.populateTS();
+    SkHome.loadEvents();    
 }
 
 // Try to load background last.
 window.addEventListener('DOMContentLoaded', (event) => {
-    skHome.loadBg();
+    SkHome.loadBg();
 });
