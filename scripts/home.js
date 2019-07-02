@@ -1,5 +1,5 @@
-const VERSION = '1.0.4';
-const LAST_UPDATED = 'June 23 2019 11:15 AM';
+const VERSION = '1.0.5';
+const LAST_UPDATED = 'July 2 2019 08:22 AM';
 
 //SkHome (SirKoik Home) object
 var SkHome = new function() {
@@ -56,6 +56,84 @@ var SkHome = new function() {
         //});
     }
     
+    // SkHome.loadTiles
+    // Load all the "More..." link tiles.
+    this.loadTiles = () => {
+        var tiles = [
+            {
+                name: 'tile-1',
+                title: 'SirKoik\'s Quizlet',
+                url: 'https://quizlet.com/SirKoik'
+            },
+            {
+                name: 'tile-2',
+                title: 'SirKoik\'s JS Fiddles',
+                url: 'https://jsfiddle.net/user/SirKoik/fiddles/'
+            },
+            {
+                name: 'tile-3',
+                title: 'Happy Mother\'s Day!',
+                url: 'Mothers-Day-2019/'
+            },
+            {
+                name: 'tile-4',
+                title: 'Countdown to New Year\'s',
+                url: 'New-Years-Countdown/'
+            },
+            {
+                name: 'tile-5',
+                title: 'Happy St. Patrick\'s Day!',
+                url: 'StPatricksDay'
+            },
+            {
+                name: 'tile-6',
+                title: 'Happy Birthday, BJ!',
+                url: 'BJ2019/'
+            },
+            {
+                name: 'tile-7',
+                title: 'Happy Easter!',
+                url: 'Jerusalem-Cross/'
+            },
+            {
+                name: 'tile-8',
+                title: 'Jokes',
+                url: 'Jokes/'
+            }
+        ];
+        
+        for (tile in tiles) {
+            var el = document.createElement('div');
+            el.style.backgroundImage = 'url("images/tiles/' + tiles[tile].name + '-sm.jpg")';
+            el.title = tiles[tile].title;
+            el.className = 'flex-item';
+            
+            var textEl = document.createElement('div');
+            textEl.className = 'title-text';
+
+            var textLink = document.createElement('a');
+            textLink.href = tiles[tile].url;
+            textLink.target = '_blank';
+            var titleText = document.createTextNode(tiles[tile].title);
+            textLink.appendChild(titleText);
+            textEl.appendChild(textLink);
+            el.appendChild(textEl);
+            
+            
+            var title = document.createElement('a');
+            title.className = 'bg';
+            title.href = tiles[tile].url;
+            title.target = '_blank';
+
+            
+            el.appendChild(title);
+            
+            console.log(el);
+            
+            document.querySelector('.flex-items-container').appendChild(el);
+        }
+    }
+    
     // SkHome.loadBg
     // load background image after everything else so the page functionality is not dependent on the background image being fully loaded.
     this.loadBg = () => {
@@ -72,7 +150,8 @@ var SkHome = new function() {
 
 window.onload = () => {
     SkHome.populateTS();
-    SkHome.loadEvents();    
+    SkHome.loadEvents();
+    SkHome.loadTiles();
 }
 
 // Try to load background last.
