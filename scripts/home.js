@@ -99,6 +99,11 @@ var SkHome = new function() {
                 name: 'tile-8',
                 title: 'Jokes',
                 url: 'Jokes/'
+            },
+            {
+                name: 'tile-9',
+                title: 'Analog Clock',
+                url: 'Analog-Clock/'
             }
         ];
         
