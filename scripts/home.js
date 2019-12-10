@@ -104,6 +104,11 @@ var SkHome = new function() {
                 name: 'tile-9',
                 title: 'Analog Clock',
                 url: 'Analog-Clock/'
+            },
+            {
+                name: 'tile-10',
+                title: 'Christmas Comet Story',
+                url: 'BorisovXmas/'
             }
         ];
         
