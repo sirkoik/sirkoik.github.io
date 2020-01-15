@@ -109,6 +109,11 @@ var SkHome = new function() {
                 name: 'tile-10',
                 title: 'Christmas Comet Story',
                 url: 'BorisovXmas/'
+            },
+            {
+                name: 'tile-11',
+                title: 'Snowy Scene',
+                url: 'FallingObjects/'
             }
         ];
         
