@@ -1,8 +1,8 @@
 # sirkoik.github.io 1.0.x series
 
 ## Improvements
-* Make better list of projects on main page.
-* Weather API - Basic version done on another page.
+* Need to update / modernize the JavaScript, as well as improve the navigation and appearance a bit.
+* This could be the part of the 2.x branch.
 
 ## Things that need to be uploaded
 * Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
