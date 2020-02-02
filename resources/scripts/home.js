@@ -1,5 +1,5 @@
 const VERSION = '1.0.7';
-const LAST_UPDATED = 'February 1 2020 10:52 PM';
+const LAST_UPDATED = 'February 1 2020 11:12 PM';
 
 // SkHome.loadEvents
 // activate the panel link event listeners.
@@ -87,7 +87,7 @@ async function loadTiles() {
         let date = tileDate.toLocaleDateString(tileDate, options);
 
         let el = document.createElement('div');
-        el.style.backgroundImage = 'url("images/tiles/' + tile.name + '-sm.jpg")';
+        el.style.backgroundImage = 'url("./resources/images/tiles/' + tile.name + '-sm.jpg")';
         el.title = tile.title + ' (' + date + ')';
         el.className = 'flex-item';
 
@@ -132,7 +132,7 @@ function populateTS() {
 // loadBg: load background image after everything else to make sure that more important interactive elements are not competing for bandwidth.
 function loadBg() {
     let background = new Image();
-    const src = 'images/Carnegiea_gigantea_near_Tucson_2-small.jpg';
+    const src = './resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_2-small.jpg';
 
     background.src = src;
     background.onload = () => {
