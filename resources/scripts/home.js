@@ -137,7 +137,7 @@ function populateTS() {
     document.getElementById('edit_timestamp').textContent = date;
 }
 
-// loadBg: load background image after everything else to make sure that more important interactive elements are not competing for bandwidth.
+// loadBg: load higher res background image.
 function loadBg() {
     let background = new Image();
     const src = './resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_2-small.jpg';
@@ -153,9 +153,10 @@ window.onload = () => {
     loadEvents();
     loadTiles();
     populateTS();
+    loadBg();
 }
 
 // Try to load background last.
 window.addEventListener('DOMContentLoaded', (event) => {
-    loadBg();
+    //loadBg();
 });
