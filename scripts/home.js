@@ -1,5 +1,5 @@
 const VERSION = '1.0.6';
-const LAST_UPDATED = 'February 1 2020 08:21 PM';
+const LAST_UPDATED = 'February 1 2020 08:25 PM';
 
 //SkHome (SirKoik Home) object
 var SkHome = new function () {
