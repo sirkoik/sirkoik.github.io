@@ -25,8 +25,9 @@ function loadEvents() {
     pane2Link.textContent = 'More...';
     
     // make audio link clickable after audio file has finished loading.
+    // TODO fix to work in iOS Safari.
     let audioEl = document.getElementById('pronounce-name');
-    const finishLoadingAudio = function() {
+    //const finishLoadingAudio = function() {
         // make title clickable / tappable
         document.querySelector('.name-click').addEventListener('click', (e) => {
             e.preventDefault();
@@ -40,11 +41,11 @@ function loadEvents() {
         });
 
         document.querySelector('.name-click').textContent = 'Alexander Koik-Cestone 🔊';
-    }
+    //}
     
-    audioEl.addEventListener('canplaythrough', finishLoadingAudio);
+    //audioEl.addEventListener('canplaythrough', finishLoadingAudio);
     // explanation for the below line: https://stackoverflow.com/questions/10235919/the-canplay-canplaythrough-events-for-an-html5-video-are-not-called-on-firefox
-    if (audioEl.readyState > 3) finishLoadingAudio(); 
+    //if (audioEl.readyState > 3) finishLoadingAudio(); 
 }
 
 // loadJSON: load a JSON file. Return as Promise.
