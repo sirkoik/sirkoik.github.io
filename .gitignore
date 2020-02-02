@@ -1,2 +1,5 @@
 sounds/name_data
 sounds/name.aup
+node_modules
+package.json
+package-lock.json

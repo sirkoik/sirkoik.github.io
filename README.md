@@ -9,4 +9,16 @@
 * Better holiday calendar - one on JSFiddle is older version. Probably on backup hdd
 
 ## Other things
-* apages.i989.net stuff - put it onto Github?
+* There is other apages.i989.net stuff that has not yet been uploaded to the site.
+
+# Bugs
+* Tile link areas are not fully clickable throughout.
+* Main pane borders spill over screen edge on mobile when expanded.
+
+# Version history
+
+## 1.0.7
+* Made JS modular. Want to do more with this in the future.
+* Moved tiles links into a JSON file that can be easily edited.
+* Audio now waits until completely loaded to be clickable.
+* Low-res background image pre-loaded.
