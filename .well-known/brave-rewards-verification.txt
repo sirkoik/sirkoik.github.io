@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sirkoik.github.io
+Token: 5929115b0d7440f5fbbafa479495ca4e68afe123bda7a4253b2698db8826744a

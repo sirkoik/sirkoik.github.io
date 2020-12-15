@@ -17,6 +17,9 @@
 
 # Version history
 
+## 1.0.8
+* Added ability to tip BAT in Brave
+
 ## 1.0.7
 * Made JS modular. Want to do more with this in the future.
 * Moved tiles links into a JSON file that can be easily edited.
