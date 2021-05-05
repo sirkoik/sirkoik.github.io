@@ -1,3 +1,10 @@
+# sirkoik.github.io 1.1.x series
+* Make projects visible to search engines.
+* Improve usability of expanding content div.
+* Fix visibility on small displays
+* Made background a simpler, smaller progressive JPEG instead of the two-image JS loaded version.
+* Projects are now titled correctly instead of an ambiguous "More..." link
+
 # sirkoik.github.io 1.0.x series
 
 ## Improvements
@@ -12,10 +19,14 @@
 * There is other apages.i989.net stuff that has not yet been uploaded to the site.
 
 # Bugs
-* Tile link areas are not fully clickable throughout.
-* Main pane borders spill over screen edge on mobile when expanded.
+* Top of box cuts off on Desktop when "Projects" is clicked.
 
 # Version history
+
+## 1.1
+* Added personal blurb
+* New font
+* Made background image smaller / load faster
 
 ## 1.0.8
 * Added ability to tip BAT in Brave

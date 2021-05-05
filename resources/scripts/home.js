@@ -1,4 +1,4 @@
-const VERSION = '1.1.0;
+const VERSION = '1.1.0';
 const LAST_UPDATED = 'May 5 2021 6:53 AM';
 
 // SkHome.loadEvents
