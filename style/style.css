@@ -1,12 +1,15 @@
+/* Merriweather font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: Merriweather, serif;
     font-size: 3vh;
     overflow: hidden;
 }
 
-.flex-container {
+.content-container {
     /* Load a low-res preview background before the high-res one */
-    background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_2-small-pre3.jpg'), linear-gradient(to bottom right, white, tan);
+    background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -42,6 +45,20 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .color-cap {
+        color: green;
+    }
+    
+    .flex-container {
+        align-items: flex-start;
+    }
+    
+    .content {
+        margin-top: 5px;
+    }
+}
+
 .pane-2 {
     display: none;
 }
@@ -67,6 +84,11 @@ a.sm {
 
 a.sm:hover {
     background: navajowhite;
+}
+
+h1.name-title {
+    margin-top: 0;
+    text-shadow: 2px 2px 2px #ccc;
 }
 
 .sm-image {
@@ -122,6 +144,10 @@ a.sm:hover {
 
 .name-click {
     cursor: pointer;
+    text-decoration: none;
+    font-size: 0.5em;
+    vertical-align: middle;
+    line-height: 2em;
 }
 
 .hidden {

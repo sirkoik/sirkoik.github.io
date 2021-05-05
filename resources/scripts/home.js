@@ -1,5 +1,5 @@
-const VERSION = '1.0.8';
-const LAST_UPDATED = 'December 14 2020 11:20 PM';
+const VERSION = '1.1.0;
+const LAST_UPDATED = 'May 5 2021 6:53 AM';
 
 // SkHome.loadEvents
 // activate the panel link event listeners.
@@ -13,16 +13,16 @@ function loadEvents() {
         
         if (pane2Active) {
             document.querySelector('.pane-2').style.display = 'none';
-            pane2Link.textContent = 'More...';
+            pane2Link.textContent = 'Projects';
         } else {
             document.querySelector('.pane-2').style.display = 'block';
-            pane2Link.textContent = 'Less...';
+            pane2Link.textContent = 'Hide projects';
         }
 
         pane2Active = !pane2Active;
     });
 
-    pane2Link.textContent = 'More...';
+    pane2Link.textContent = 'Projects';
     
     // make audio link clickable after audio file has finished loading.
     //let audioEl = document.getElementById('pronounce-name');
@@ -44,8 +44,6 @@ function loadEvents() {
             //if (audioEl.ended) audioEl.play();
             audioEl.play();
         });
-
-        document.querySelector('.name-click').textContent = 'Alexander Koik-Cestone 🔊';
     }
     
     audio.addEventListener('canplaythrough', finishLoadingAudio, false);
@@ -137,23 +135,10 @@ function populateTS() {
     document.getElementById('edit_timestamp').textContent = date;
 }
 
-// loadBg: load higher res background image.
-function loadBg() {
-    let background = new Image();
-    const src = './resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_2-small.jpg';
-
-    background.src = src;
-    background.onload = () => {
-        document.querySelector('.flex-container').style.backgroundImage = 'url("' + src + '")';
-        document.querySelector('.bg-loading').classList.add('hidden');
-    }
-}
-
 window.onload = () => {
     loadEvents();
     loadTiles();
     populateTS();
-    loadBg();
 }
 
 // Try to load background last.
