@@ -1,5 +1,5 @@
 const VERSION = '1.1.1';
-const LAST_UPDATED = 'May 7 2021 7:24 AM;
+const LAST_UPDATED = 'May 7 2021 7:24 AM';
 
 // SkHome.loadEvents
 // activate the panel link event listeners.
