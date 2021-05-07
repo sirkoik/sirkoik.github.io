@@ -150,3 +150,14 @@ p.resume-link {
 .hidden {
     display: none;
 }
+
+
+ul {
+    font-size: 80%;
+    list-style-type: "\1F335";
+    padding-left: 1em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
