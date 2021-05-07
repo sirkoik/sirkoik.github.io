@@ -13,9 +13,10 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
     overflow-y: scroll;
+    padding: 3vh;
 }
 
 .fullsize {
@@ -49,14 +50,6 @@ body {
     .color-cap {
         color: green;
     }
-    
-    .flex-container {
-        align-items: flex-start;
-    }
-    
-    .content {
-        margin-top: 5px;
-    }
 }
 
 .pane-2 {
@@ -89,6 +82,10 @@ a.sm:hover {
 h1.name-title {
     margin-top: 0;
     text-shadow: 2px 2px 2px #ccc;
+}
+
+p.resume-link {
+    text-align: center;
 }
 
 .sm-image {
