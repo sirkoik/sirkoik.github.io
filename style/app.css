@@ -8,21 +8,22 @@ body {
 }
 
 .content-container {
-    /* Load a low-res preview background before the high-res one */
     background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+
     overflow-y: scroll;
     padding: 3vh;
 }
 
 .fullsize {
     position: fixed;
-    top: 0; right: 0;
-    bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .content {
@@ -30,7 +31,7 @@ body {
     width: 80%;
     border: 1vh solid green;
     border-radius: 2vh;
-    background: linear-gradient(to bottom right, rgba(255,255,255,0.9), tan);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), tan);
     box-shadow: 0.5vh 0.5vh 2vh black;
 }
 
@@ -52,23 +53,25 @@ body {
     }
 }
 
-.pane-2 {
-/*    display: none;*/
-}
-
 .bigger {
     font-size: 4.5vh;
 }
 
-a { color: green; }
-a:hover { background: navajowhite; }
+a {
+    color: green;
+}
+
+a:hover {
+    background: navajowhite;
+}
+
 a.cactus {
     text-decoration: none;
 }
 
 a.sm {
     display: inline-block;
-    
+
     border-radius: 5vh;
     width: 7vh;
     height: 7vh;
@@ -82,6 +85,12 @@ a.sm:hover {
 h1.name-title {
     margin-top: 0;
     text-shadow: 2px 2px 2px #ccc;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
 }
 
 p.resume-link {
@@ -110,17 +119,15 @@ p.resume-link {
 }
 
 .big-button:hover {
-    /*background: linear-gradient(to bottom right, navajowhite, forestgreen);*/
-
-    background: linear-gradient(to bottom right, lime, forestgreen);
+    background: linear-gradient(to bottom right, yellow, gold);
     color: white;
-    border-color: white;
+    border-color: gold;
 }
 
 .big-button:active {
     background: linear-gradient(to top left, lime, forestgreen);
     color: chartreuse;
-    border-color: yellow;            
+    border-color: yellow;
 }
 
 .footer-cactus {
@@ -130,9 +137,9 @@ p.resume-link {
 }
 
 .footer-text {
-    float:right;
+    float: right;
     font-size: 50%;
-    margin-top:-0.3vh;
+    margin-top: -0.3vh;
 }
 
 .icon-link {
@@ -152,12 +159,24 @@ p.resume-link {
 }
 
 
-ul {
+ol {
     font-size: 80%;
     list-style-type: "\1F335";
     padding-left: 1em;
 }
 
-ul li {
+ol li {
     margin-bottom: 0.5em;
+}
+
+.list-item-spacer {
+    display: block;
+    padding-left: 0.2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50%;
+    margin-top: 0.5em;
 }
