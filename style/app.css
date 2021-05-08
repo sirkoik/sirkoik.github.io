@@ -93,6 +93,16 @@ h2 {
     margin-bottom: 0;
 }
 
+ul.social-media {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul.social-media li {
+    display: inline;
+}
+
 p.resume-link {
     text-align: center;
 }

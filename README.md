@@ -20,6 +20,11 @@
 
 # Version history
 
+## 1.2.1 (5/8/2021)
+* Improved accessibility
+** Social media links are now part of a list
+** Aria labels for links and elements with vague or unclear text content
+
 ## 1.2 (5/8/2021)
 * JS Modules
 * Name pronounciation audio works better
