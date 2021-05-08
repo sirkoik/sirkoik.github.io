@@ -1,8 +1,4 @@
-export {
-    tiles
-};
-
-const tiles = [
+export const projects = [
     {
         name: 'tile-1',
         title: 'SirKoik\'s Quizlet',

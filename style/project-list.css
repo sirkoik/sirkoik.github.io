@@ -1,0 +1,22 @@
+.project-container a {
+    display: block;
+    box-sizing: border-box;
+    
+    font-size: 80%;
+    
+    width: 100%;
+    padding: 1em 0 1em 0;
+    margin-bottom: 0.2em;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    
+    border-radius: 0.5em;
+    border: 0.2em solid green;
+    color: white;
+    text-decoration: none;
+}
+
+.project-container a:hover {
+    border-color: white;
+}
