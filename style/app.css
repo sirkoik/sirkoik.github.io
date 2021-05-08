@@ -8,7 +8,7 @@ body {
 }
 
 .content-container {
-    background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);
+/*    background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);*/
     background-size: cover;
     display: flex;
     justify-content: center;
