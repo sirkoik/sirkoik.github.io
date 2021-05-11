@@ -22,6 +22,7 @@
 
 ## 1.2.2 (5/11/2021)
 * Added Codewarrior badge
+* Added in-page links to sections
 
 ## 1.2.1 (5/8/2021)
 * Improved accessibility
