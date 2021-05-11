@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.2 (5/11/2021)
+* Added Codewarrior badge
+
 ## 1.2.1 (5/8/2021)
 * Improved accessibility
 ** Social media links are now part of a list
