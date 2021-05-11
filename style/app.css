@@ -51,7 +51,7 @@ video.background-video {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     .content {
         width: 50%;
     }
