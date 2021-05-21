@@ -51,3 +51,7 @@
 * Moved tiles links into a JSON file that can be easily edited.
 * Audio load message remains until audio is loaded.
 * A low-res background image is now loaded prior to the high-res one finishing.
+
+## Log
+# 5/20/2021
+* Add <i>Agile for One</i> Pluralsight course.
