@@ -53,5 +53,8 @@
 * A low-res background image is now loaded prior to the high-res one finishing.
 
 ## Log
+# 6/6/2021
+* Add Pluralsight Skills profile link and icon
+
 # 5/20/2021
 * Add <i>Agile for One</i> Pluralsight course.
