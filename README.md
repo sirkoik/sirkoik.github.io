@@ -55,6 +55,7 @@
 ## Log
 # 6/6/2021
 * Add Pluralsight Skills profile link and icon
+* Add PDF icon
 
 # 5/20/2021
 * Add <i>Agile for One</i> Pluralsight course.
