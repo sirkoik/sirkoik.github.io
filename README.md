@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.5 (7/31/2021)
+* Added reCaptcha to see email
+
 ## 1.2.4 (7/31/2021)
 * Added email
 
