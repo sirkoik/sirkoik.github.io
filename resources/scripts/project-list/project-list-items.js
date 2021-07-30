@@ -82,5 +82,12 @@ export const projects = [
         description: 'Animated Valentine\'s Day greeting card with customizable message.',
         url: 'February/',
         date: 'February 1 2020 08:20 PM'
+    },
+    {
+        name: 'tile-13',
+        title: 'Celestial Compare',
+        description: 'Compare solar system objects by physical properties.',
+        url: 'Celestial-Compare/',
+        date: 'July 30 2021 10:53 AM'
     }
 ];
