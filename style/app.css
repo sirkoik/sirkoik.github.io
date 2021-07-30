@@ -116,7 +116,7 @@ p.resume-link {
     border: 0;
 }
 
-.big-button {
+.button {
     text-shadow: .1vh .1vh .2vh gray;
     box-shadow: 2px 2px 2px gray;
 
@@ -126,19 +126,22 @@ p.resume-link {
     border: 0.5vh solid green;
     border-radius: 2vh;
     padding: 1.1vh;
-    line-height: 10vh;
 }
 
-.big-button:hover {
+.button:hover {
     background: linear-gradient(to bottom right, yellow, gold);
     color: white;
     border-color: gold;
 }
 
-.big-button:active {
+.button:active {
     background: linear-gradient(to top left, lime, forestgreen);
     color: chartreuse;
     border-color: yellow;
+}
+
+.big-button {
+    line-height: 10vh;
 }
 
 .big-button img {

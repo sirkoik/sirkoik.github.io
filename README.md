@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.4 (7/31/2021)
+* Added email
+
 ## 1.2.3 (7/30/2021)
 * Added skills to homepage
 * Added section tags

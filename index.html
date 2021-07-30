@@ -9,7 +9,12 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style/app.css">
+    <link rel="stylesheet" type="text/css" href="style/modal.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit"
+    async defer></script>
     <script type="module" src="./resources/scripts/app.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+</script>
 </head>
 
 <body>
@@ -22,10 +27,10 @@
             <main>
                 <section>
                     <p>I have experience in detail-oriented data analysis work, usability testing and programming.</p>
-                    <p class="resume-link"><span class="bigger"><a class="big-button" target="_blank" href="CurriculumVitae/Alexander_Koik-Cestone_resume.pdf" title="Open my resume in PDF format" aria-label="Alex Koik-Cestone's resume in PDF format">Resume <img src="./resources/images/icons/pdf.svg"></a></span></p>
+                    <p class="resume-link"><span class="bigger"><a class="button big-button" target="_blank" href="CurriculumVitae/Alexander_Koik-Cestone_resume.pdf" title="Open my resume in PDF format" aria-label="Alex Koik-Cestone's resume in PDF format">Resume <img src="./resources/images/icons/pdf.svg"></a></span></p>
 
                     <ul class="social-media" aria-label="My social media profiles">
-                        <li style="visibility: hidden;" id="email-container"><a class="sm" target="_blank" href="mailto:dummy@domain.com" title="Email me" aria-label="Email" id="email-addr"><img class="sm-image" src="./resources/images/icons/gmail.svg" alt="Email" /></a></li>
+                        <li id="email-container"><a class="sm" target="_blank" href="#" title="Email me" aria-label="Email" id="email-addr"><img class="sm-image" src="./resources/images/icons/gmail.svg" alt="Email" /></a></li>
                         <li><a target="_blank" href="https://www.linkedin.com/in/alexander-koik-cestone-89304556" title="My LinkedIn page" aria-label="LinkedIn profile"><img class="sm-image" src="./resources/images/icons/linkedin.svg" alt="LinkedIn" /></a></li>
                         <li><a class="sm" target="_blank" href="https://github.com/sirkoik" title="My Github repositories" aria-label="Github"><img class="sm-image" src="./resources/images/icons/GitHub-Mark-64px.png" alt="Github" /></a></li>
                         <li><a class="sm" target="_blank" href="https://app.pluralsight.com/profile/alexander-koik-cesto" title="My Pluralsight Skills profile" aria-label="Pluralsight"><img class="sm-image" src="./resources/images/icons/Pluralsight.svg" alt="Pluralsight" /></a></li>
@@ -117,6 +122,13 @@
                     </div>
                 </div>
             </footer>
+        </div>
+    </div>
+
+    <div class="modal-background" id="modal-background"></div>
+    <div class="modal" id="modal1">
+        <div class="modal-box content" id="modal-box-content">
+            
         </div>
     </div>
 </body>
