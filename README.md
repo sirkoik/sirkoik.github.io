@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.6 (7/31/2021)
+* Removed reCaptcha for email, kept popup modal
+
 ## 1.2.5 (7/31/2021)
 * Added reCaptcha to see email
 

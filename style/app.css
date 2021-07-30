@@ -69,16 +69,17 @@ a.cactus {
     text-decoration: none;
 }
 
-a.sm {
+a.sm, button.sm {
     display: inline-block;
 
+    cursor: pointer;
     border-radius: 5vh;
     width: 7vh;
     height: 7vh;
     border: 0;
 }
 
-a.sm:hover {
+a.sm:hover, button.sm:hover {
     background: navajowhite;
 }
 
