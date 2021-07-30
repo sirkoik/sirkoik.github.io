@@ -14,6 +14,27 @@ export const projects = [
         date: 'Jan 1 2015 00:00 AM'
     },
     {
+        name: 'tile-2a',
+        title: 'HTML5 Hearts',
+        description: 'A web valentine.',
+        url: 'https://jsfiddle.net/SirKoik/eaga2sbv/3/embedded/#Result',
+        date: 'Jan 1 2015 00:00 AM'
+    },
+    {
+        name: 'tile-2b',
+        title: 'Capitalize',
+        description: 'Capital letter formatter.',
+        url: 'https://jsfiddle.net/SirKoik/1y54re7w/#Result',
+        date: 'Jan 1 2015 00:00 AM'
+    },
+    {
+        name: 'tile-2c',
+        title: 'Collatz Conjecture',
+        description: 'Interactive example of the Collatz Conjecture.',
+        url: 'https://output.jsbin.com/nupubis',
+        date: 'Jan 1 2017 00:00 AM'
+    },
+    {
         name: 'tile-3',
         title: 'Happy Mother\'s Day!',
         description: 'Happy Mother\'s Day in 3D.',
