@@ -100,7 +100,8 @@ ul.social-media {
 }
 
 ul.social-media li {
-    display: inline;
+    display: inline-block;
+    padding: 5px;
 }
 
 p.resume-link {

@@ -20,6 +20,10 @@
 
 # Version history
 
+## 1.2.3 (7/30/2021)
+* Added skills to homepage
+* Added section tags
+
 ## 1.2.2 (5/11/2021)
 * Added Codewarrior badge
 * Added in-page links to sections
