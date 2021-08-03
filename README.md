@@ -22,7 +22,7 @@
 
 ## 1.2.7 (8/3/2021)
 * Added "Jump to" links
-* Adjust icon size
+* Adjusted icon size
 * Improved footer
 
 ## 1.2.6 (7/31/2021)
