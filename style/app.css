@@ -116,7 +116,7 @@ h1.name-title {
 
 h2 {
     font-size: 1.8rem;
-    margin: 0 auto;
+    margin: 2.5rem auto -0.5rem auto;
 }
 
 ol.jump-to {
