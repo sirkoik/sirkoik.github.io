@@ -20,6 +20,11 @@
 
 # Version history
 
+## 1.2.7 (8/3/2021)
+* Added "Jump to" links
+* Adjust icon size
+* Improved footer
+
 ## 1.2.6 (7/31/2021)
 * Removed reCaptcha for email, kept popup modal
 

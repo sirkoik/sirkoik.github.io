@@ -14,6 +14,6 @@ export const renderDateLastModified = () => {
     let date = dateUpdated.toLocaleDateString(undefined, dateOptions);
     date = date.replace(',', '');
     
-    const dateText = document.createTextNode(`Last edited ${date}.`);
-    document.querySelector('.last-edited').appendChild(dateText);
+    const dateText = document.createTextNode(date);
+    document.querySelector('#last-edited').appendChild(dateText);
 }
