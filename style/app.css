@@ -206,7 +206,11 @@ ol {
 }
 
 ol li {
-    margin-bottom: 0.5em;
+    margin: 0.5em auto;
+}
+
+ol.skills {
+    margin: 1em auto;
 }
 
 .list-item-spacer {

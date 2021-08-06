@@ -23,8 +23,15 @@ export const renderProjectList = () => {
     for (const project of projects) {
         //const projectDate = new Date(project.date).toLocaleDateString(undefined, dateFormat);
         
+        let longDesc = '';
+        if (project.longDescription) {
+            longDesc = '<ol class="skills">';
+            longDesc += project.longDescription.map(item => `<li><span class="list-item-spacer">${item}</span></li>`).join('\n');
+            longDesc += '</ol>';
+        }
+
         const listItem = document.createElement('li');
-        const itemHTML = `<span class="list-item-spacer"><a href="${project.url}" target="_blank">${project.title}</a> ${project.description}</span>`;
+        const itemHTML = `<span class="list-item-spacer"><a href="${project.url}" target="_blank">${project.title}</a> ${project.description}${longDesc}</span>`;
     
         listItem.innerHTML = itemHTML;
         projectListHTML.appendChild(listItem);
