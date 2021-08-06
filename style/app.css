@@ -209,6 +209,21 @@ ol li {
     margin: 0.5em auto;
 }
 
+ol li img {
+    height: 1em;
+    width: 1em;
+    margin: auto 0.1em;
+}
+
+.tech-image {
+    cursor: pointer;
+}
+
+.codewars-icon {
+    vertical-align: middle;
+    width: auto;
+}
+
 ol.skills {
     margin: 1em auto;
 }

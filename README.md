@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.7b (8/6/2021)
+* Added clickable technology types icons
+
 ## 1.2.7a (8/5/2021)
 * Added functionality explaining the relevant skills that projects demonstrate (not finished)
 * Improved display

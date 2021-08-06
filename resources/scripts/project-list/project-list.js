@@ -1,5 +1,5 @@
 import { projects } from './project-list-items.js';
-
+import { techTypes } from './tech-types.js';
 
 //const dateFormat = {
 //    month: 'numeric',
@@ -23,6 +23,14 @@ export const renderProjectList = () => {
     for (const project of projects) {
         //const projectDate = new Date(project.date).toLocaleDateString(undefined, dateFormat);
         
+        let technologies = '';
+        if (project.technologies) {
+            technologies = ' ' + project.technologies.map(technology => {
+                const tech = techTypes[technology];
+                return `<img onclick="alert('Technology type: ${tech.name}');" class="tech-image" src="./resources/images/icons/technologies/${tech.image}" alt=${tech.name} title=${tech.name} />`;
+            }).join('');
+        }
+
         let longDesc = '';
         if (project.longDescription) {
             longDesc = '<ol class="skills">';
@@ -31,7 +39,7 @@ export const renderProjectList = () => {
         }
 
         const listItem = document.createElement('li');
-        const itemHTML = `<span class="list-item-spacer"><a href="${project.url}" target="_blank">${project.title}</a> ${project.description}${longDesc}</span>`;
+        const itemHTML = `<span class="list-item-spacer"><a href="${project.url}" target="_blank">${project.title}</a> ${project.description}${technologies}${longDesc}</span>`;
     
         listItem.innerHTML = itemHTML;
         projectListHTML.appendChild(listItem);
