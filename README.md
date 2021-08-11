@@ -20,6 +20,9 @@
 
 # Version history
 
+## 1.2.7c (8/11/2021)
+* Added Course Projects links to React course-in-progress with descriptions.
+
 ## 1.2.7b (8/6/2021)
 * Added clickable technology types icons
 
