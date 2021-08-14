@@ -2,12 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 body {
+    margin: 0;
     font-family: Merriweather, serif;
     font-size: 24px;
 
     background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+    height: 2rem;
+    background: green;
+    
+    text-align: center;
+}
+
+.header a {
+    color: white;
 }
 
 .content {
