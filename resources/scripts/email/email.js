@@ -6,22 +6,25 @@ const domain = ['m', 'o', 'c', '.', 'l', 'i', 'a', 'm', 'g'];
 
 const email = `${addr.reverse().join('')}@${domain.reverse().join('')}`;
 
+const openEmailModal = () => {
+  const closeHTML = `<button class="button button-close" id="modal-close">Close</button>`;
+
+  document.getElementById(
+    'modal-box-content'
+  ).innerHTML = `<p>Email me at:</p><p><a target="_blank" href="mailto:${email}">${email}</a></p>${closeHTML}`;
+  document.getElementById('modal-close').addEventListener('click', hideModal);
+  showModal();
+};
+
 export const loadEmailNoCaptcha = () => {
-  const emailEl = document.getElementById('email-addr');
-  // emailEl.href = `mailto:${email}`;
-  // emailEl.title = `Email me at ${email}`;
-  // document.getElementById('email-container').style.visibility = 'visible';
-  emailEl.addEventListener('click', (event) => {
-    event.preventDefault();
+  const emailEls = document.getElementsByClassName('email-addr');
 
-    const closeHTML = `<button class="button button-close" id="modal-close">Close</button>`;
-
-    document.getElementById(
-      'modal-box-content'
-    ).innerHTML = `<p>Email me at:</p><p><a target="_blank" href="mailto:${email}">${email}</a></p>${closeHTML}`;
-    document.getElementById('modal-close').addEventListener('click', hideModal);
-    showModal();
-  });
+  for (let emailEl of emailEls) {
+    emailEl.addEventListener('click', (event) => {
+      event.preventDefault();
+      openEmailModal();
+    });
+  }
 
   document.getElementById('email-container').style.visibility = 'visible';
 };
@@ -53,6 +56,7 @@ export const loadEmail3 = () => {
 // old system with reCaptch v2
 export const loadEmail = () => {
   const emailEl = document.getElementById('email-addr');
+
   emailEl.addEventListener('click', (event) => {
     event.preventDefault();
     showModal();

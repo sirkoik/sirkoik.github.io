@@ -4,10 +4,13 @@
 body {
   margin: 0;
   font-family: Merriweather, serif;
-  font-size: 24px;
+  font-size: 18pt;
 
-  background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'),
-    linear-gradient(to bottom right, white, tan);
+  background: /*url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'),*/ linear-gradient(
+    to bottom right,
+    white,
+    tan
+  );
   background-size: cover;
   background-attachment: fixed;
 }
@@ -278,4 +281,34 @@ ol.skills {
   justify-content: flex-end;
   font-size: 50%;
   margin-top: 0.5em;
+}
+
+footer {
+  color: sandybrown;
+  padding: 1.5rem;
+  font-size: 0.8em;
+  /* background-color: saddlebrown; */
+  /* background: linear-gradient(to bottom right, saddlebrown, rgba(0, 0, 0, 0.9)); */
+  background: linear-gradient(
+    to bottom right,
+    hsl(25deg 76% 20% / 95%),
+    hsl(25deg 76% 20% / 95%)
+  );
+}
+
+footer h2 {
+  font-size: 1.2em;
+}
+
+footer h2.first {
+  margin-top: 1rem;
+}
+
+footer a {
+  color: greenyellow;
+}
+
+.last-edited-container {
+  text-align: center;
+  margin-top: 2em;
 }

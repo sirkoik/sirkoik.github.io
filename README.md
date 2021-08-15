@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.3.1 (8/15/2021)
+
+- Added footer
+
 ## 1.3 (8/14/2021)
 
 - Added navbar at top.
