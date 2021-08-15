@@ -1,172 +1,430 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
     <title>Alexander Koik-Cestone</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/app.css">
-    <link rel="stylesheet" type="text/css" href="style/modal.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style/app.css" />
+    <link rel="stylesheet" type="text/css" href="style/modal.css" />
+    <link rel="stylesheet" type="text/css" href="style/video.css" />
     <!--<script src="https://www.google.com/recaptcha/api.js?render=6Lejvc4bAAAAADn9PN50JrzTShaL-1irJfSXEj8v"
     async defer></script>-->
     <script type="module" src="./resources/scripts/app.js"></script>
     <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-</head>
+  </head>
 
-<body>
-        <div class="header">
-            <a name="top"></a>
-            <a class="button" href="#certifications">Certifications</a>
-            <a class="button" href="#portfolio">Portfolio</a>
-            <a class="button" href="#skills">Skills</a>
-        </div>
+  <body>
+    <a name="top"></a>
+    <div class="header">
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+    </div>
 
+    <video
+      class="background-video"
+      autoplay
+      loop
+      muted="muted"
+      playsinline="playsinline"
+    >
+      <source src="./resources/videos/pexels-damian-clem-6928375 (1).mp4" />
+    </video>
+
+    <script>
+      document.querySelector('.background-video').playbackRate = 0.8;
+    </script>
 
     <!--<div class="top" style="position: fixed; bottom: 1rem; right: 1rem;">
         <a class="button top" title="top" aria-label="Top" href="#top">&uarr;</a>
     </div>-->
 
     <div class="content">
-        <main>
-        <h1 class="name-title" aria-label="Alexander Koik-Cestone"><span class="color-cap">A</span>lexander <span class="color-cap">K</span>oik-<span class="color-cap">C</span>estone <a href="#" class="name-click" title="Phonetic pronounciation" aria-label="Phonetic pronounciation">🔊</a></h1>
+      <main>
+        <h1 class="name-title" aria-label="Alexander Koik-Cestone">
+          <span class="color-cap">A</span>lexander
+          <span class="color-cap">K</span>oik-<span class="color-cap">C</span
+          >estone
+          <a
+            href="#"
+            class="name-click"
+            title="Phonetic pronounciation"
+            aria-label="Phonetic pronounciation"
+            >🔊</a
+          >
+        </h1>
 
-            <section>
-                <p>I have experience in detail-oriented data analysis work, usability testing and programming.</p>
-                
-                <div class="resume-and-sm-container">
-                    <div class="resume-and-sm">
-                        <div>
-                            <a class="button big-button resume-button" target="_blank" href="CurriculumVitae/Alexander_Koik-Cestone_resume.pdf" title="Open my resume in PDF format" aria-label="Alex Koik-Cestone's resume in PDF format">Résumé <img src="./resources/images/icons/pdf.svg"></a>
-                        </div>
-                        <div>
-                            <ul class="social-media" aria-label="My social media profiles">
-                                <li id="email-container" style="visibility:hidden"><button class="sm g-recaptcha" title="Email me" aria-label="Email me" id="email-addr"><img class="sm-image" src="./resources/images/icons/gmail.svg" alt="Email"/></button></li>
-                                <li><a class="sm" target="_blank" href="https://www.linkedin.com/in/alexander-koik-cestone-89304556" title="My LinkedIn page" aria-label="LinkedIn profile"><img class="sm-image" src="./resources/images/icons/LinkedIn_Logo.svg" alt="LinkedIn" /></a></li>
-                                <li><a class="sm" target="_blank" href="https://github.com/sirkoik" title="My Github repositories" aria-label="Github"><img class="sm-image" src="./resources/images/icons/github.svg" alt="Github" /></a></li>
-                                <li><a class="sm" target="_blank" href="https://app.pluralsight.com/profile/alexander-koik-cesto" title="My Pluralsight Skills profile" aria-label="Pluralsight"><img class="sm-image" src="./resources/images/icons/Pluralsight.svg" alt="Pluralsight" /></a></li>
-                                <li><a class="sm" target="_blank" href="https://twitter.com/sirkoik" title="Twitter" aria-label="My Twitter"><img class="sm-image" src="./resources/images/icons/twitter (circular).svg" alt="Twitter" /></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <section>
+          <p>
+            I have experience in detail-oriented data analysis work, usability
+            testing and programming.
+          </p>
 
-            <section>
-                <h2 style="margin-top: 0">Jump to</h2>
-                <br/>
-                <ol class="jump-to">
-                    <li><a class="button" href="#certifications">Certs</a></li>
-                    <li><a class="button" href="#skills">Skills</a></li>
-                    <li><a class="button" href="#in-progress">In Progress</a></li>
-                    <li><a class="button" href="#badges">Badges</a></li>
-                    <li><a class="button" href="#projects">Projects</a></li>
-                    <li><a class="button" href="#utilities">Utilities</a></li>
-                </ol>
-            </section>
+          <div class="resume-and-sm-container">
+            <div class="resume-and-sm">
+              <div>
+                <a
+                  class="button big-button resume-button"
+                  target="_blank"
+                  href="CurriculumVitae/Alexander_Koik-Cestone_resume.pdf"
+                  title="Open my resume in PDF format"
+                  aria-label="Alex Koik-Cestone's resume in PDF format"
+                  >Résumé <img src="./resources/images/icons/pdf.svg"
+                /></a>
+              </div>
+              <div>
+                <ul class="social-media" aria-label="My social media profiles">
+                  <li id="email-container" style="visibility: hidden">
+                    <button
+                      class="sm g-recaptcha"
+                      title="Email me"
+                      aria-label="Email me"
+                      id="email-addr"
+                    >
+                      <img
+                        class="sm-image"
+                        src="./resources/images/icons/gmail.svg"
+                        alt="Email"
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <a
+                      class="sm"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/alexander-koik-cestone-89304556"
+                      title="My LinkedIn page"
+                      aria-label="LinkedIn profile"
+                      ><img
+                        class="sm-image"
+                        src="./resources/images/icons/LinkedIn_Logo.svg"
+                        alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      class="sm"
+                      target="_blank"
+                      href="https://github.com/sirkoik"
+                      title="My Github repositories"
+                      aria-label="Github"
+                      ><img
+                        class="sm-image"
+                        src="./resources/images/icons/github.svg"
+                        alt="Github"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      class="sm"
+                      target="_blank"
+                      href="https://app.pluralsight.com/profile/alexander-koik-cesto"
+                      title="My Pluralsight Skills profile"
+                      aria-label="Pluralsight"
+                      ><img
+                        class="sm-image"
+                        src="./resources/images/icons/Pluralsight.svg"
+                        alt="Pluralsight"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      class="sm"
+                      target="_blank"
+                      href="https://twitter.com/sirkoik"
+                      title="Twitter"
+                      aria-label="My Twitter"
+                      ><img
+                        class="sm-image"
+                        src="./resources/images/icons/twitter (circular).svg"
+                        alt="Twitter"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section>
-                <h2><a name="certifications"></a>Certifications and Classes</h2>
+        <!-- <section>
+          <h2 style="margin-top: 0">Jump to</h2>
+          <br />
+          <ol class="jump-to">
+            <li><a class="button" href="#certifications">Certs</a></li>
+            <li><a class="button" href="#skills">Skills</a></li>
+            <li><a class="button" href="#portfolio">Portfolio</a></li>
+            <li><a class="button" href="#in-progress">In Progress</a></li>
+            <li><a class="button" href="#badges">Badges</a></li>
+            <li><a class="button" href="#utilities">Utilities</a></li>
+          </ol>
+        </section> -->
+
+        <section>
+          <a name="certifications"></a>
+          <h2>Certifications and Classes</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                ><b>React: The Big Picture.</b>
+                <a
+                  href="https://sirkoik.github.io/CurriculumVitae/certifications/React-The-Big-Picture/certificate.pdf"
+                  >Pluralsight, May 2021</a
+                >. Learned about the basics of the React library and how it
+                compares to frameworks like Angular, Vue, and Ember.</span
+              >
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b>Agile for One.</b>
+                <a
+                  href="https://sirkoik.github.io/CurriculumVitae/certifications/Agile-for-One/certificate.pdf"
+                  >Pluralsight, May 2021</a
+                >. Learned basic Agile and Scrum techniques for managing
+                projects.
+              </span>
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b>Git &amp; Github - The Practical Guide.</b>
+                <a
+                  href="https://sirkoik.github.io/CurriculumVitae/certifications/certificate-of-completion-for-git-github-the-practical-guide.pdf"
+                  >Academind, Dec 2020</a
+                >. Learned the basics of both Git and GitHub.</span
+              >
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b>Angular - The Complete Guide (2020 Edition).</b>
+                <a
+                  href="https://www.udemy.com/certificate/UC-624f6f83-940e-428f-accd-d16113661ded"
+                  >Udemy, Oct 2020</a
+                >. Learned how to create dynamic websites using the Angular
+                framework.</span
+              >
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b
+                  >Complete AJAX Using Bootstrap, PHP from Basic to Advanced.</b
+                >
+                <a href="https://www.udemy.com/certificate/UC-E3EMJE4O"
+                  >Udemy, Apr 2018</a
+                >. Learned AJAX, Bootstrap CSS, and the PHP programming
+                language.</span
+              >
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b
+                  >The Complete HTML &amp; CSS Course, From Novice to
+                  Professional.</b
+                >
+                <a href="https://www.udemy.com/certificate/UC-QZDWYX3V"
+                  >Udemy, Apr 2017</a
+                >
+                Learned the HTML and CSS languages for writing website
+                front-ends.</span
+              >
+            </li>
+
+            <li>
+              <span class="list-item-spacer"
+                ><b>Complete jQuery and jQuery UI Course for Beginner.</b>
+                <a href="https://www.udemy.com/certificate/UC-4V285L2N"
+                  >Udemy, Dec 2016</a
+                >. Learned how to use jQuery, a dynamic JavaScript framework for
+                web pages.</span
+              >
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2><a name="skills"></a>Skills</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                ><b>Programming (web).</b>
+                <a
+                  href="https://app.pluralsight.com/profile/alexander-koik-cesto"
+                  >HTML</a
+                >,
+                <a
+                  href="https://app.pluralsight.com/profile/alexander-koik-cesto"
+                  >CSS</a
+                >,
+                <a
+                  href="https://app.pluralsight.com/profile/alexander-koik-cesto"
+                  >JavaScript</a
+                >, Angular, TypeScript,
+                <a
+                  href="https://app.pluralsight.com/profile/alexander-koik-cesto"
+                  >React</a
+                >, jQuery, JSON, XML, Bootstrap, PHP, ThreeJS</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><b>Programming.</b> Java, Perl</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"><b>Scripting.</b> VBA</span>
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><b>Version control.</b> Git, Github, Atlassian Bitbucket</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><b>Databases / backends.</b> MySQL, Firebase</span
+              >
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2><a name="in-progress"></a>Classes in progress</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                ><b>React, The Complete Guide.</b>
+                Udemy. Learning how to create dynamic websites using the React
+                framework. Course Projects:
                 <ol>
-                    <li><span class="list-item-spacer"><b>React: The Big Picture.</b> <a href="https://sirkoik.github.io/CurriculumVitae/certifications/React-The-Big-Picture/certificate.pdf">Pluralsight, May 2021</a>.
-                        Learned about the basics of the React library and how it compares to frameworks like Angular, Vue, and Ember.</span></li>
-                    
-                    <li><span class="list-item-spacer"><b>Agile for One.</b> <a href="https://sirkoik.github.io/CurriculumVitae/certifications/Agile-for-One/certificate.pdf">Pluralsight, May 2021</a>.
-                        Learned basic Agile and Scrum techniques for managing projects. </span></li>
-
-                    <li><span class="list-item-spacer"><b>Git &amp; Github - The Practical Guide.</b> <a href="https://sirkoik.github.io/CurriculumVitae/certifications/certificate-of-completion-for-git-github-the-practical-guide.pdf">Academind, Dec 2020</a>.
-                        Learned the basics of both Git and GitHub.</span></li>
-
-                    <li><span class="list-item-spacer"><b>Angular - The Complete Guide (2020 Edition).</b>
-                        <a href="https://www.udemy.com/certificate/UC-624f6f83-940e-428f-accd-d16113661ded">Udemy, Oct 2020</a>.
-                        Learned how to create dynamic websites using the Angular framework.</span></li>
-
-                    <li><span class="list-item-spacer"><b>Complete AJAX Using Bootstrap, PHP from Basic to Advanced.</b>
-                        <a href="https://www.udemy.com/certificate/UC-E3EMJE4O">Udemy, Apr 2018</a>.
-                        Learned AJAX, Bootstrap CSS, and the PHP programming language.</span></li>
-
-                    <li><span class="list-item-spacer"><b>The Complete HTML &amp; CSS Course, From Novice to Professional.</b>
-                        <a href="https://www.udemy.com/certificate/UC-QZDWYX3V">Udemy, Apr 2017</a>
-                        Learned the HTML and CSS languages for writing website front-ends.</span></li>
-
-                    <li><span class="list-item-spacer"><b>Complete jQuery and jQuery UI Course for Beginner.</b>
-                        <a href="https://www.udemy.com/certificate/UC-4V285L2N">Udemy, Dec 2016</a>.
-                        Learned how to use jQuery, a dynamic JavaScript framework for web pages.</span></li>
+                  <li>
+                    <span class="list-item-spacer"
+                      ><a
+                        target="_blank"
+                        href="https://react-meals-b821d.web.app/"
+                        >React Meals</a
+                      >
+                      &bull; Basic food ordering app system. Concepts: Component
+                      reuse, state management, hooks, context, HTTP requests,
+                      side effects, REST APIs.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="list-item-spacer"
+                      ><a
+                        target="_blank"
+                        href="https://react-routing-practice-cef82.web.app/quotes?sort=desc"
+                        >Quotes Page</a
+                      >
+                      &bull; Basic add / view quotes and comments system.
+                      Concepts: Routing, lazy loading, hooks, HTTP requests,
+                      side effects, REST APIs.</span
+                    >
+                  </li>
                 </ol>
-            </section>
+              </span>
+            </li>
+          </ol>
+        </section>
 
-            <section>
-                <h2><a name="skills"></a>Skills</h2>
-                <ol>
-                    <li><span class="list-item-spacer"><b>Programming (web).</b> <a href="https://app.pluralsight.com/profile/alexander-koik-cesto">HTML</a>, <a href="https://app.pluralsight.com/profile/alexander-koik-cesto">CSS</a>, <a href="https://app.pluralsight.com/profile/alexander-koik-cesto">JavaScript</a>, Angular, TypeScript, <a href="https://app.pluralsight.com/profile/alexander-koik-cesto">React</a>, jQuery, JSON, XML, Bootstrap, PHP, ThreeJS</span></li>
-                    <li><span class="list-item-spacer"><b>Programming.</b> Java, Perl</span></li>
-                    <li><span class="list-item-spacer"><b>Scripting.</b> VBA</span></li>
-                    <li><span class="list-item-spacer"><b>Version control.</b> Git, Github, Atlassian Bitbucket</span></li>
-                    <li><span class="list-item-spacer"><b>Databases / backends.</b> MySQL, Firebase</span></li>
-                </ol>
-            </section>
+        <section>
+          <h2><a name="badges"></a>Badges</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                >Codewars:
+                <a target="_blank" href="https://www.codewars.com/users/sirkoik"
+                  ><img
+                    class="codewars-icon"
+                    src="https://www.codewars.com/users/sirkoik/badges/micro" /></a
+              ></span>
+            </li>
+          </ol>
+        </section>
 
-            <section>
-                <h2><a name="in-progress"></a>Classes in progress</h2>
-                <ol>
-                    <li><span class="list-item-spacer"><b>React, The Complete Guide.</b>
-                        Udemy.
-                        Learning how to create dynamic websites using the React framework.
-                        Course Projects: 
-                        <ol>
-                            <li><span class="list-item-spacer"><a target="_blank" href="https://react-meals-b821d.web.app/">React Meals</a> &bull; Basic food ordering app system. Concepts: Component reuse, state management, hooks, context, HTTP requests, side effects, REST APIs.</span></li>
-                            <li><span class="list-item-spacer"><a target="_blank" href="https://react-routing-practice-cef82.web.app/quotes?sort=desc">Quotes Page</a> &bull; Basic add / view quotes and comments system. Concepts: Routing, lazy loading, hooks, HTTP requests, side effects, REST APIs.</span></li>
-                        </ol>
-                    </span>
-                    </li>
-                </ol>
-            </section>
+        <section>
+          <h2><a name="portfolio"></a>Portfolio</h2>
+          <div class="project-container"></div>
+        </section>
 
-            <section>
-                <h2><a name="badges"></a>Badges</h2>
-                <ol>
-                    <li><span class="list-item-spacer">Codewars: <a target="_blank" href="https://www.codewars.com/users/sirkoik"><img class="codewars-icon" src="https://www.codewars.com/users/sirkoik/badges/micro"></a></span></li>
-                </ol>
-            </section>
+        <section>
+          <h2><a name="utilities"></a>Utilities</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                ><a href="/CountIt">CountIt</a> Word count helper for
+                writing.</span
+              >
+            </li>
+          </ol>
+        </section>
+      </main>
 
-            <section>
-                <h2><a name="projects"></a>Projects</h2>
-                <div class="project-container"></div>
-            </section>
+      <footer>
+        <section>
+          <h2>Credits</h2>
+          <ol>
+            <li>
+              <span class="list-item-spacer"
+                ><a
+                  target="_new"
+                  href="https://commons.wikimedia.org/wiki/Carnegiea_gigantea#/media/File:Carnegiea_gigantea_near_Tucson_2.jpg"
+                  >Ken Bosma</a
+                >
+                &bull; Background</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><a
+                  href="https://www.flaticon.com/authors/dimitry-miroliubov"
+                  title="Dimitry Miroliubov"
+                  >Dimitry Miroliubov</a
+                >
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                  >www.flaticon.com</a
+                >
+                &bull; PDF icon</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><a href="https://icon54.com/" title="Pixel perfect"
+                  >Pixel perfect</a
+                >
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                  >www.flaticon.com</a
+                >
+                &bull; Email, Github and CSS3 icons</span
+              >
+            </li>
+            <li>
+              <span class="list-item-spacer"
+                ><a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                  >www.flaticon.com</a
+                >
+                &bull; Twitter, JavaScript, HTML5 and React icons</span
+              >
+            </li>
+          </ol>
 
-            <section>
-                <h2><a name="utilities"></a>Utilities</h2>
-                <ol>
-                    <li><span class="list-item-spacer"><a href="/CountIt">CountIt</a> Word count helper for writing.</span></li>
-                </ol>
-            </section>
-        </main>
-
-        <footer>
-            <section>
-                <h2>Credits</h2>
-                <ol>
-                    <li><span class="list-item-spacer"><a target="_new" href="https://commons.wikimedia.org/wiki/Carnegiea_gigantea#/media/File:Carnegiea_gigantea_near_Tucson_2.jpg">Ken Bosma</a> &bull; Background</span></li>
-                    <li><span class="list-item-spacer"><a href="https://www.flaticon.com/authors/dimitry-miroliubov" title="Dimitry Miroliubov">Dimitry Miroliubov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> &bull; PDF icon</span></li>
-                    <li><span class="list-item-spacer"><a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> &bull; Email, Github and CSS3 icons</span></li>
-                    <li><span class="list-item-spacer"><a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> &bull; Twitter, JavaScript, HTML5 and React icons</span></li>
-                </ol>
-
-                <h2>Last edited</h2>
-                <p id="last-edited"></p>
-            </section>
-        </footer>
+          <h2>Last edited</h2>
+          <p id="last-edited"></p>
+        </section>
+      </footer>
     </div>
-
 
     <div class="modal-background" id="modal-background"></div>
     <div class="modal" id="modal1">
-        <div class="modal-box content" id="modal-box-content">
-            
-        </div>
+      <div class="modal-box content" id="modal-box-content"></div>
     </div>
-</body>
-
+  </body>
 </html>

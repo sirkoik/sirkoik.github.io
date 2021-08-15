@@ -2,255 +2,280 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 body {
-    margin: 0;
-    font-family: Merriweather, serif;
-    font-size: 24px;
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-size: 24px;
 
-    background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'), linear-gradient(to bottom right, white, tan);
-    background-size: cover;
-    background-attachment: fixed;
+  background: url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'),
+    linear-gradient(to bottom right, white, tan);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 
-    height: 2rem;
-    background: green;
-    
-    text-align: center;
+  height: 2rem;
+  background: green;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header a {
-    color: white;
-}
-
-.content {
-    margin: 3rem auto 3rem auto;
-    padding: 1.5rem;
-    width: 80%;
-    border: 0.5rem solid green;
-    border-radius: 1rem;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), tan);
-    box-shadow: 0.25rem 0.25rem 0.5rem black;
-}
-
-@media screen and (orientation: landscape) {
-    .content {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .content {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 501px) {
-    .color-cap {
-        color: black;
-    }
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
-    .color-cap {
-        color: green;
-    }
+  .header {
+    height: 4rem;
+  }
+
+  .header a {
+    font-size: 0.8em;
+    height: 2rem;
+    padding: 1rem;
+  }
+}
+
+.content {
+  padding: 1.5rem;
+
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), tan);
+}
+
+@media screen and (min-width: 501px) {
+  .content {
+    margin: 3rem auto 3rem auto;
+    width: 80%;
+    border: 0.5rem solid green;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .color-cap {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .color-cap {
+    color: green;
+  }
 }
 
 a {
-    color: green;
+  color: green;
 }
 
 a:hover {
-    background: navajowhite;
+  background: navajowhite;
 }
 
 a.cactus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a.top {
-    font-size: 1rem;
-    line-height: 1rem;
-    vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1rem;
+  vertical-align: middle;
 }
 
 /* resume and social media buttons */
 
 .resume-and-sm-container {
-    text-align: center;
+  text-align: center;
 }
 
 .resume-and-sm {
-    display: inline-block;
+  display: inline-block;
 }
 
-a.sm, button.sm {
-    display: inline-block;
+a.sm,
+button.sm {
+  display: inline-block;
 
-    cursor: pointer;
-    border-radius: 2.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 0;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
 }
 
-a.sm:hover, button.sm:hover {
-    background: navajowhite;
+a.sm:hover,
+button.sm:hover {
+  background: navajowhite;
 }
 
 button.sm {
-    padding: 0;
+  padding: 0;
 }
 
 .sm-image {
-    height: 2.5rem;
-    width: 2.5rem;
-    /* vertical-align: middle; */
-    border: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  /* vertical-align: middle; */
+  border: 0;
 }
 
 @media screen and (min-width: 501px) {
-    a.sm, button.sm {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
+  a.sm,
+  button.sm {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 
-    .sm-image {
-        height: 3.5rem;
-        width: 3.5rem;
-    }
+  .sm-image {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 h1.name-title {
-    margin-top: 0;
-    text-shadow: 0.2rem 0.2rem 0.2rem #aaa;
+  margin-top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #aaa;
 }
 
 h2 {
-    font-size: 1.8rem;
-    margin: 2.5rem auto -0.5rem auto;
+  font-size: 1.8rem;
+  margin: 2.5rem auto -0.5rem auto;
 }
 
 ol.jump-to {
-    text-align: center;
+  text-align: center;
 }
 
 ol.jump-to li {
-    list-style-type: none;
-    display: inline-block;
-    padding-left: 0;
-    height: 3rem;
-    /* text-align: center; */
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 0;
+  height: 3rem;
+  /* text-align: center; */
 }
 
-
 ul.social-media {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
 }
 
 ul.social-media li {
-    display: inline-block;
-    padding: 5px;
+  display: inline-block;
+  padding: 5px;
 }
 
 .button {
-    text-shadow: 0.2rem 0.2rem 0.3rem grey;
-    box-shadow: 0.2rem 0.2rem 0.3rem grey;
+  text-shadow: 0.2rem 0.2rem 0.3rem grey;
+  box-shadow: 0.2rem 0.2rem 0.3rem grey;
 
-    text-decoration: none;
-    background: linear-gradient(to bottom right, lime, forestgreen);
-    color: white;
-    border: 0.25rem solid green;
-    border-radius: 0.6rem;
-    padding: 0.5rem;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, lime, forestgreen);
+  color: white;
+  border: 0.25rem solid green;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
 }
 
 .button:hover {
-    background: linear-gradient(to bottom right, yellow, gold);
-    color: white;
-    border-color: gold;
+  background: linear-gradient(to bottom right, yellow, gold);
+  color: white;
+  border-color: gold;
 }
 
 .button:active {
-    background: linear-gradient(to top left, lime, forestgreen);
-    color: chartreuse;
-    border-color: yellow;
+  background: linear-gradient(to top left, lime, forestgreen);
+  color: chartreuse;
+  border-color: yellow;
 }
 
 .big-button {
-    font-size: 2.28rem;
-    line-height: 2.28rem;
+  font-size: 2.28rem;
+  line-height: 2.28rem;
 }
 
 .big-button img {
-    height: 2.28rem;
-    vertical-align: text-top;
+  height: 2.28rem;
+  vertical-align: text-top;
 }
 
 .resume-button {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .icon-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .name-click {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.5rem;
-    vertical-align: middle;
-    line-height: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  line-height: 2rem;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-
 ol {
-    font-size: 80%;
-    list-style-type: "\1F335";
-    padding-left: 1em;
+  font-size: 80%;
+  list-style-type: '\1F335';
+  padding-left: 1em;
 }
 
 ol li {
-    margin: 0.5em auto;
+  margin: 0.5em auto;
 }
 
 ol li img {
-    height: 1em;
-    width: 1em;
-    margin: auto 0.1em;
+  height: 1em;
+  width: 1em;
+  margin: auto 0.1em;
 }
 
 .tech-image {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .codewars-icon {
-    vertical-align: middle;
-    width: auto;
+  vertical-align: middle;
+  width: auto;
 }
 
 ol.skills {
-    margin: 1em auto;
+  margin: 1em auto;
 }
 
 .list-item-spacer {
-    display: block;
-    padding-left: 0.2em;
+  display: block;
+  padding-left: 0.2em;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 50%;
-    margin-top: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50%;
+  margin-top: 0.5em;
 }
