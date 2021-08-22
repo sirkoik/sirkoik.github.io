@@ -24,6 +24,11 @@
 
 # Version history
 
+## 1.3.2 (8/22/2021)
+
+- Added Lighthouse skill
+- Implemented most Lighthouse suggestions to improve page
+
 ## 1.3.1 (8/15/2021)
 
 - Added footer
