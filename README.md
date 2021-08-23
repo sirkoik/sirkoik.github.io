@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.3.3 (8/23/2021)
+
+- Added Meetups project (NextJS/MongoDB)
+
 ## 1.3.2 (8/22/2021)
 
 - Added Lighthouse skill
