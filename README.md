@@ -27,6 +27,7 @@
 ## 1.3.3 (8/23/2021)
 
 - Added Meetups project (NextJS/MongoDB)
+- Added basic knowledge section
 
 ## 1.3.2 (8/22/2021)
 
