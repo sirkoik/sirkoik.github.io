@@ -24,6 +24,15 @@
 
 # Version history
 
+## 1.3.4 (8.24/2021)
+
+- Added React - The Complete Guide certificate link
+- Added sections
+  - Class Projects
+  - In Progress
+- Improved UI
+- Fix #15 issue with scroll padding
+
 ## 1.3.3 (8/23/2021)
 
 - Added Meetups project (NextJS/MongoDB)

@@ -1,18 +1,24 @@
 /* Merriweather font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
 body {
   margin: 0;
   font-family: Merriweather, serif;
   font-size: 18pt;
 
-  background: /*url('./../resources/images/backgrounds/Carnegiea_gigantea_near_Tucson_3-small.jpg'),*/ linear-gradient(
+  background-color: skyblue;
+  /* background: linear-gradient(
     to bottom right,
     white,
     tan
   );
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .header {
@@ -35,6 +41,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
+
   .header {
     height: 4rem;
   }
@@ -52,13 +62,23 @@ body {
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), tan);
 }
 
-@media screen and (min-width: 501px) {
+/* @media screen and (min-width: 501px) {
   .content {
     margin: 3rem auto 3rem auto;
     width: 80%;
     border: 0.5rem solid green;
     border-radius: 1rem;
     box-shadow: 0.25rem 0.25rem 0.5rem black;
+  }
+} */
+
+@media screen and (min-width: 501px) {
+  .content {
+    margin: 3rem auto 3rem auto;
+    width: 80%;
+    border: 0.2rem solid green;
+    border-radius: 0.3rem;
+    /* box-shadow: 0rem 0rem 2rem orchid; */
   }
 }
 
@@ -187,7 +207,7 @@ ul.social-media li {
   padding: 5px;
 }
 
-.button {
+/* .button {
   text-shadow: 0.2rem 0.2rem 0.3rem grey;
   box-shadow: 0.2rem 0.2rem 0.3rem grey;
 
@@ -196,6 +216,17 @@ ul.social-media li {
   color: white;
   border: 0.25rem solid green;
   border-radius: 0.6rem;
+  padding: 0.5rem;
+} */
+
+.button {
+  text-shadow: 0.1rem 0.1rem 0.3rem grey;
+  box-shadow: 0.1rem 0.1rem 0.2rem #a0a0a0;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, lime, forestgreen);
+  color: white;
+  border: 0.15rem solid green;
+  border-radius: 0.3rem;
   padding: 0.5rem;
 }
 
