@@ -24,7 +24,11 @@
 
 # Version history
 
-## 1.3.4 (8.24/2021)
+## 1.3.5 (9/24/2021)
+
+- Added Node.JS: The Big Picture certificate link
+
+## 1.3.4 (8/24/2021)
 
 - Added React - The Complete Guide certificate link
 - Added sections
