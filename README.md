@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.3.6 (10/23/2021)
+
+- Added Sass / SCSS skill(s)
+
 ## 1.3.5 (9/24/2021)
 
 - Added Node.JS: The Big Picture certificate link
