@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.4 (10/27/2021)
+
+- Made project list static
+
 ## 1.3.6 (10/23/2021)
 
 - Added Sass / SCSS skill(s)
