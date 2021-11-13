@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.4.1 (11/2/2021)
+
+- Added WeatherNg to portfolio
+
 ## 1.4 (10/27/2021)
 
 - Made project list static
