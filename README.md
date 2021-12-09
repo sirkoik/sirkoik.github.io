@@ -24,6 +24,13 @@
 
 # Version history
 
+## 1.4.2 (12/8/2021)
+
+- Rearranged section order - Portfolio is higher
+- Split `Certifications and Classes` into `Certifications` and `Classes`
+- Added AI-900 certification link
+- Updated In progress section
+
 ## 1.4.1 (11/2/2021)
 
 - Added WeatherNg to portfolio
