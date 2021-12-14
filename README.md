@@ -26,7 +26,7 @@
 
 ## 1.4.3 (12/13/2021)
 
-- Added [JSE-40-01] JSE – Certified Entry-Level JavaScript Programmer certification
+- Added (JSE-40-01) JSE – Certified Entry-Level JavaScript Programmer certification
 
 ## 1.4.2 (12/8/2021)
 
