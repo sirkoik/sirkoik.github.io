@@ -24,6 +24,17 @@
 
 # Version history
 
+## 1.4.4 (12/17/2021)
+
+- Changed blurb at the beginning
+- Centered text
+- Moved CountIt to a higher priority in the portfolio since I've improved it a lot recently
+- Updated NodeJS / NextJS blurbs
+- Moved WeatherNg further down since it needs work
+- Removed Utilities section temporarily
+- Changed "Badges" to "Code Challenges" and added a link to my repo for them
+- Removed redundant In Progress link from bottom
+
 ## 1.4.3 (12/13/2021)
 
 - Added (JSE-40-01) JSE – Certified Entry-Level JavaScript Programmer certification
