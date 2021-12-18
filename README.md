@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.4.5 (12/17/2021)
+
+- Removed video background
+
 ## 1.4.4 (12/17/2021)
 
 - Changed blurb at the beginning
