@@ -1,2 +1,2 @@
-export const VERSION = '1.4.5';
-export const LAST_UPDATED = 'December 17 2021 11:02 PM';
+export const VERSION = '1.4.6';
+export const LAST_UPDATED = 'January 7 2022 9:37 PM';

@@ -24,6 +24,10 @@
 
 # Version history
 
+## 1.4.6 (1/7/2022)
+
+- Added Microsoft Learn badges / achievements link
+
 ## 1.4.5 (12/17/2021)
 
 - Removed video background
