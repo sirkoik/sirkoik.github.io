@@ -1,20 +1,8 @@
-# sirkoik.github.io 1.2.x series
-
-- Refactored JS code with JS modules.
-- Made project list easier to see and more descriptive.
-
-# sirkoik.github.io 1.1.x series
-
-- Make certifications visible to search engines.
-- Improve usability of expanding content div.
-- Fix visibility on small displays
-- Made background a simpler, smaller progressive JPEG instead of the two-image JS loaded version.
-- Projects are now titled correctly instead of an ambiguous "More..." link
-
 # Ongoing additions
 
 ## Things that need to be uploaded
 
+- Certification badges
 - Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
 - Better holiday calendar - one on JSFiddle is older version. Probably on backup hdd
 
@@ -22,7 +10,12 @@
 
 - There is other apages.i989.net stuff that has not yet been uploaded to the site.
 
-# Version history
+# Revision history
+
+## 1.4.7 (1/12/2022)
+
+- Removed "date last modified" from home page and app-constants
+- From now on, only changes to the code strucutre (not content additions/edits) will result in version changes
 
 ## 1.4.6 (1/7/2022)
 
