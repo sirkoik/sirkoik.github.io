@@ -12,6 +12,11 @@
 
 # Revision history
 
+## 1/12/2022
+
+- Added Microsoft Certified: Azure AI Fundamentals
+- Updated Microsoft certification titles to match the official ones
+
 ## 1.4.7 (1/12/2022)
 
 - Removed "date last modified" from home page and app-constants
