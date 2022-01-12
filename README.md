@@ -15,7 +15,7 @@
 ## 1.4.7 (1/12/2022)
 
 - Removed "date last modified" from home page and app-constants
-- From now on, only changes to the code strucutre (not content additions/edits) will result in version changes
+- From now on, only changes to the code structure (not content additions/edits) will result in version changes
 
 ## 1.4.6 (1/7/2022)
 
