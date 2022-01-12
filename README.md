@@ -14,7 +14,7 @@
 
 ## 1/12/2022
 
-- Added Microsoft Certified: Azure AI Fundamentals
+- Added Microsoft Certified: Azure Fundamentals
 - Updated Microsoft certification titles to match the official ones
 
 ## 1.4.7 (1/12/2022)
