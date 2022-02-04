@@ -59,7 +59,7 @@ body {
 .content {
   padding: 1.5rem;
 
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), tan);
+  background: linear-gradient(to bottom right, #ffecd2, tan);
 }
 
 /* @media screen and (min-width: 501px) {
@@ -175,13 +175,14 @@ button.sm {
 }
 
 h1.name-title {
+  font-size: 1.5em;
   margin-top: 0;
   text-shadow: 0.2rem 0.2rem 0.2rem #aaa;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin: 2.5rem auto -0.5rem auto;
+  margin: 0rem auto -0.5rem auto;
 }
 
 ol.jump-to {
@@ -291,6 +292,10 @@ ol li img {
 
 .tech-image {
   cursor: pointer;
+}
+
+section p {
+  font-size: 1rem;
 }
 
 .codewars-icon {

@@ -12,6 +12,13 @@
 
 # Revision history
 
+## 2/4/2022
+
+- Added blog section
+- Added text blurbs
+- Made sections more distinct
+- Resized some text
+
 ## 1/12/2022
 
 - Added Microsoft Certified: Azure Fundamentals
