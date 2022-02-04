@@ -11,7 +11,8 @@ body {
   font-family: Merriweather, serif;
   font-size: 18pt;
 
-  background-color: skyblue;
+  /* background-color: skyblue; */
+  background: radial-gradient(transparent, #00378f94);
   /* background: linear-gradient(
     to bottom right,
     white,
@@ -26,8 +27,8 @@ body {
   top: 0;
 
   height: 2rem;
-  background: green;
-
+  background: linear-gradient(0deg, forestgreen, #15cd15);
+  box-shadow: 0rem 0.2rem 1rem 0 rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -38,6 +39,11 @@ body {
   align-items: center;
   color: white;
   text-decoration: none;
+}
+
+.header a:hover {
+  color: green;
+  background-color: yellow;
 }
 
 @media screen and (max-width: 500px) {
