@@ -12,6 +12,11 @@
 
 # Revision history
 
+## 2/16/2022
+
+- Added Microsoft Certified: Power Platform Fundamentals
+- Updated "in progress" section
+
 ## 2/4/2022
 
 - Added blog section
