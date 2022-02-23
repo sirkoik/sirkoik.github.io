@@ -12,6 +12,11 @@
 
 # Revision history
 
+## 2/23/2022
+
+- Added Microsoft Certified: Azure Data Fundamentals
+- Updated "in progress" section
+
 ## 2/16/2022
 
 - Added Microsoft Certified: Power Platform Fundamentals
