@@ -15,6 +15,7 @@
 ## 2/27/2022
 
 - Added Lean Six Sigma White Belt certification
+- Lean Six Sigma White Belt link now goes to Badgr badge
 
 ## 2/23/2022
 
