@@ -12,14 +12,18 @@
 
 # Revision history
 
+## 2/27/2022
+
+- Added Lean Six Sigma White Belt certification
+
 ## 2/23/2022
 
-- Added Microsoft Certified: Azure Data Fundamentals
+- Added Microsoft Certified: Azure Data Fundamentals certification
 - Updated "in progress" section
 
 ## 2/16/2022
 
-- Added Microsoft Certified: Power Platform Fundamentals
+- Added Microsoft Certified: Power Platform Fundamentals certification
 - Updated "in progress" section
 
 ## 2/4/2022
@@ -31,7 +35,7 @@
 
 ## 1/12/2022
 
-- Added Microsoft Certified: Azure Fundamentals
+- Added Microsoft Certified: Azure Fundamentals certification
 - Updated Microsoft certification titles to match the official ones
 
 ## 1.4.7 (1/12/2022)
@@ -66,7 +70,7 @@
 
 - Rearranged section order - Portfolio is higher
 - Split `Certifications and Classes` into `Certifications` and `Classes`
-- Added AI-900 certification link
+- Added AI-900 certification
 - Updated In progress section
 
 ## 1.4.1 (11/2/2021)
