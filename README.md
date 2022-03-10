@@ -12,6 +12,11 @@
 
 # Revision history
 
+# 3/10/2022
+
+- Added Microsoft Certified: Security, Compliance, and Identity Fundamentals certification
+- Updated "in progress" section
+
 ## 2/27/2022
 
 - Added Lean Six Sigma White Belt certification
