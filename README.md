@@ -12,10 +12,13 @@
 
 # Revision history
 
-5/3/2022
+# 5/3/2022
 
 - Added Lean Six Sigma Yellow Belt certification
 - Revised intro
+- Improved display
+- Prioritized portfolio and skills
+- Added blog link
 
 # 3/10/2022
 

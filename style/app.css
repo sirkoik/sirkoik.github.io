@@ -48,17 +48,17 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 3rem;
   }
 
   .header {
-    height: 4rem;
+    height: 3rem;
   }
 
   .header a {
-    font-size: 0.8em;
+    font-size: 0.6em;
     height: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
