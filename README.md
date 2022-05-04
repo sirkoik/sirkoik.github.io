@@ -12,6 +12,11 @@
 
 # Revision history
 
+5/3/2022
+
+- Added Lean Six Sigma Yellow Belt certification
+- Revised intro
+
 # 3/10/2022
 
 - Added Microsoft Certified: Security, Compliance, and Identity Fundamentals certification
