@@ -2,6 +2,7 @@
 
 ## Things that need to be uploaded
 
+- More skills
 - Certification badges
 - Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
 - Better holiday calendar - one on JSFiddle is older version. Probably on backup hdd
@@ -11,6 +12,14 @@
 - There is other apages.i989.net stuff that has not yet been uploaded to the site.
 
 # Revision history
+
+# 3/16/2024
+
+- Added Power Platform PL-400 certification
+
+# 8/5/2023
+
+- Added M365 Fundamentals certification
 
 # 5/3/2022
 
