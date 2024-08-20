@@ -354,3 +354,25 @@ footer a {
   text-align: center;
   margin-top: 2em;
 }
+
+/* cert badges */
+
+.cert-badges {
+  text-align: center;
+}
+
+.cert-badges a {
+  display: inline-block;
+  text-decoration: none;
+  width: 12rem;
+  height: 12rem;
+  padding: 0.2rem;
+}
+
+.cert-badges a:hover {
+  background-color: navajowhite;
+}
+
+.cert-badges img {
+  width: 100%;
+}
