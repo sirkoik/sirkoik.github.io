@@ -3,3 +3,7 @@ sounds/name.aup
 node_modules
 package.json
 package-lock.json
+public
+dist
+assets
+src

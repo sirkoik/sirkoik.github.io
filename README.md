@@ -1,3 +1,7 @@
+# LEGACY SITE
+This is the legacy site on sirKoik.github.io / alexkc.com
+There will be no more additions to this branch.
+
 # Ongoing additions
 
 ## Things that need to be uploaded
@@ -13,15 +17,19 @@
 
 # Revision history
 
-# 3/16/2024
+# 10/23/2026
+- Tagged this as the legacy site
+- Uncommented WeatherNG section from portfolio
+
+## 3/16/2024
 
 - Added Power Platform PL-400 certification
 
-# 8/5/2023
+## 8/5/2023
 
 - Added M365 Fundamentals certification
 
-# 5/3/2022
+## 5/3/2022
 
 - Added Lean Six Sigma Yellow Belt certification
 - Revised intro
@@ -29,7 +37,7 @@
 - Prioritized portfolio and skills
 - Added blog link
 
-# 3/10/2022
+## 3/10/2022
 
 - Added Microsoft Certified: Security, Compliance, and Identity Fundamentals certification
 - Updated "in progress" section
