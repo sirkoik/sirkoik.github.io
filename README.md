@@ -3,9 +3,11 @@
 ## Things that need to be uploaded
 
 - More skills
-- Certification badges
 - Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
 - Better holiday calendar - one on JSFiddle is older version. Probably on backup hdd
+
+## WeatherNG
+- This needs to be redone so that it works.
 
 ## Other things
 
@@ -13,15 +15,31 @@
 
 # Revision history
 
-# 3/16/2024
+## 10/23/2026
+- Background change. Added a low-poly cactus scene in the background which scrolls behind the portfolio cards.
+- Font change. App now uses Silkscreen for titles (a blocky pixelated font) and VT323 (a retro computer terminal-looking font).
+- The resume and socials links are below the headings, and stay on top (sticky) when the user scrolls down.
+- The headings go away when the user scrolls down.
+- The tappable audio icon was replaced with a button that activates both audio and visual name pronounciation.
+
+### Files and data that are preserved
+- .gitignore
+- .nojekyll
+- CNAME
+- README.md
+- favicon
+- meta tags
+- name pronouncing audio
+
+## 3/16/2024
 
 - Added Power Platform PL-400 certification
 
-# 8/5/2023
+## 8/5/2023
 
 - Added M365 Fundamentals certification
 
-# 5/3/2022
+## 5/3/2022
 
 - Added Lean Six Sigma Yellow Belt certification
 - Revised intro

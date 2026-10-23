@@ -7,12 +7,12 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: Merriweather, serif;
-  font-size: 18pt;
+  /* margin: 0; */
+  /* font-family: Merriweather, serif; */
+  /* font-size: 18pt; */
 
   /* background-color: skyblue; */
-  background: radial-gradient(transparent, #00378f94);
+  /* background: radial-gradient(transparent, #00378f94); */
   /* background: linear-gradient(
     to bottom right,
     white,
@@ -22,7 +22,7 @@ body {
   background-attachment: fixed; */
 }
 
-.header {
+/* .header {
   position: sticky;
   top: 0;
 
@@ -32,9 +32,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
+} */
 
-.header a {
+/* .header a {
   display: flex;
   align-items: center;
   color: white;
@@ -44,7 +44,7 @@ body {
 .header a:hover {
   color: green;
   background-color: yellow;
-}
+} */
 
 @media screen and (max-width: 500px) {
   html {
@@ -62,10 +62,14 @@ body {
   }
 }
 
+.content:first-of-type {
+  margin-top: 1rem;
+}
+
 .content {
   padding: 1.5rem;
 
-  background: linear-gradient(to bottom right, #ffecd2, tan);
+  background: linear-gradient(to bottom right, #ffecd2cc, tan);
 }
 
 /* @media screen and (min-width: 501px) {
@@ -78,17 +82,17 @@ body {
   }
 } */
 
-@media screen and (min-width: 501px) {
+/* @media screen and (min-width: 501px) { */
   .content {
-    margin: 3rem auto 3rem auto;
+    margin: 2rem auto 4rem auto;
     width: 80%;
     border: 0.2rem solid green;
     border-radius: 0.3rem;
-    /* box-shadow: 0rem 0rem 2rem orchid; */
+    box-shadow: 0rem 0rem 2rem orchid;
   }
-}
+/* } */
 
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
   .content {
     width: 50%;
   }
@@ -98,7 +102,7 @@ body {
   .content {
     width: 50%;
   }
-}
+} */
 
 @media screen and (min-width: 501px) {
   .color-cap {
@@ -133,11 +137,28 @@ a.top {
 /* resume and social media buttons */
 
 .resume-and-sm-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .resume-and-sm {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(wheat, wheat, transparent);
+  border-radius: 0 0 2rem 2rem;
+  /* padding: 0 2rem; */
+}
+
+.linkbar-separator {
+  font-size: 6rem;
+  color: orchid;
+  font-weight: 100;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
 }
 
 a.sm,
