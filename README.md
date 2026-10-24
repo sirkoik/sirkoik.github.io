@@ -1,15 +1,13 @@
-# LEGACY SITE
-This is the legacy site on sirKoik.github.io / alexkc.com
-There will be no more additions to this branch.
-
 # Ongoing additions
 
 ## Things that need to be uploaded
 
 - More skills
-- Certification badges
 - Dimensions2 (solar system object dimensions) - in "Gateway" PC wamp folder.
 - Better holiday calendar - one on JSFiddle is older version. Probably on backup hdd
+
+## WeatherNG
+- This needs to be redone so that it works.
 
 ## Other things
 
@@ -17,9 +15,21 @@ There will be no more additions to this branch.
 
 # Revision history
 
-# 10/23/2026
-- Tagged this as the legacy site
-- Uncommented WeatherNG section from portfolio
+## 10/23/2026
+- Background change. Added a low-poly cactus scene in the background which scrolls behind the portfolio cards.
+- Font change. App now uses Silkscreen for titles (a blocky pixelated font) and VT323 (a retro computer terminal-looking font).
+- The resume and socials links are below the headings, and stay on top (sticky) when the user scrolls down.
+- The headings go away when the user scrolls down.
+- The tappable audio icon was replaced with a button that activates both audio and visual name pronounciation.
+
+### Files and data that are preserved
+- .gitignore
+- .nojekyll
+- CNAME
+- README.md
+- favicon
+- meta tags
+- name pronouncing audio
 
 ## 3/16/2024
 
@@ -37,7 +47,7 @@ There will be no more additions to this branch.
 - Prioritized portfolio and skills
 - Added blog link
 
-## 3/10/2022
+# 3/10/2022
 
 - Added Microsoft Certified: Security, Compliance, and Identity Fundamentals certification
 - Updated "in progress" section
