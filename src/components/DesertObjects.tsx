@@ -5,6 +5,15 @@ import { Group } from "three";
 import { useRef } from "react";
 import { Clone, Grid } from "@react-three/drei";
 
+const SunSphere = () => {
+    return (
+        <mesh visible position={[0,-0.1,10]}>
+            <sphereGeometry args={[3,3,3]}></sphereGeometry>
+            <meshStandardMaterial color="white" />
+        </mesh>
+    );
+};
+
 const Models = () => {
     const sceneryRef = useRef<Group>(null);
 
@@ -87,6 +96,10 @@ const Models = () => {
     })
 
     return <>
+        {/* Point sunlight */}
+        {/* <pointLight position={[5,2,10]} />
+        <axesHelper args={[5]} position={[5, 2, 10]}></axesHelper> */}
+
         {/* TODO: implement suggested ref and Drei Clone-based reuse changes. */}
         <group ref={sceneryRef}>
             {sceneObjects}
@@ -104,13 +117,17 @@ const Models = () => {
         })} */}
 
 
-        {/* <axesHelper args={[5]} position={[0, 0, 10]}></axesHelper> */}
-        <mesh visible position={[0,0,0]} rotation={[Math.PI / 2, 0, 0]}>
-            <planeGeometry args={[20,20]} />
-            <meshStandardMaterial color="brown" />
+
+        {/* <SunSphere /> */}
+
+        {/* Ground material. Positioned slighly below the grid to avoid z-fighting */}
+        {/* Rotated by -PI/2 so that the top side is seen / renders */}
+        <mesh visible position={[0,-0.1,10]} rotation={[-Math.PI/2, 0, 0]}>
+            <planeGeometry args={[200,200]} />
+            <meshStandardMaterial color="tan" />
         </mesh>
 
-
+        {/* Drei infinite grid shader for ground */}
         <Grid 
             cellSize = {CELL_SIZE}
             followCamera={true}
