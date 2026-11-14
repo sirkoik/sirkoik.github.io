@@ -15,7 +15,6 @@ function App() {
 
   return (
     <>
-      <button onClick={onSetForeground} style={{position:'absolute', zIndex: '10'}}>Set</button>
       <div className="cactusBackground">
         <ClientOnly>
           {
@@ -29,13 +28,12 @@ function App() {
           }
         </ClientOnly>
       </div>
-      {showForeground &&
-        <div className="flexContainer">
-          <div className="pageContents">
-            <PageLegacy />
-          </div>
+      
+      <div className="flexContainer">
+        <div className="pageContents">
+          <PageLegacy foregroundToggleFunction={onSetForeground} foregroundIsRendered={showForeground} />
         </div>
-      }
+      </div>
     </>
   );
 }
