@@ -2,11 +2,16 @@ import { ClientOnly } from 'vite-react-ssg/single-page';
 import './App.css'
 // import CactusScene from './components/CactusScene';
 import PageLegacy from './components/PageLegacy';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 
 const CactusScene = lazy(() => import('./components/CactusScene'));
 
 function App() {
+  const [showForeground, setShowForeground] = useState(true);
+
+  const onSetForeground = () => {
+    setShowForeground(prev => !prev);
+  }
 
   return (
     <>
@@ -23,9 +28,10 @@ function App() {
           }
         </ClientOnly>
       </div>
+      
       <div className="flexContainer">
         <div className="pageContents">
-          <PageLegacy />
+          <PageLegacy foregroundToggleFunction={onSetForeground} foregroundIsRendered={showForeground} />
         </div>
       </div>
     </>

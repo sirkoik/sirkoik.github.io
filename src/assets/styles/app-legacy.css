@@ -62,6 +62,33 @@ body {
   }
 }
 
+/* Sticky header that is a scroll-state container */
+.sticky-header {
+  container-type: scroll-state;
+  position: sticky;
+  top: 0;
+  font-size: 0.5rem;
+
+  /* when stuck at the top, i.e. the user has scrolled past the stuck trigger point, the background changes to a solid color */
+  .resume-and-sm-container {
+    transition: background-color 1s ease;
+
+    @container scroll-state(stuck:top) {
+      background-color: wheat;
+      
+    }
+  }
+}
+
+.header-stuck {
+  transition: background-color 1s ease;
+  background-color: wheat;
+}
+
+.wheat-highlight {
+  background-color: wheat;
+}
+
 .content:first-of-type {
   margin-top: 1rem;
 }
@@ -148,17 +175,25 @@ a.top {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(wheat, wheat, transparent);
-  border-radius: 0 0 2rem 2rem;
-  /* padding: 0 2rem; */
+  /* background: radial-gradient(wheat, wheat, transparent); */
+  /* background: radial-gradient(skyblue, skyblue, transparent); */
+  /* background: skyblue; */
+  /* border-radius: 0 0 2rem 2rem; */
+  padding: 0 1rem;
 }
 
 .linkbar-separator {
   font-size: 6rem;
-  color: orchid;
   font-weight: 100;
   padding: 0 0.5rem;
   margin-left: 0.5rem;
+}
+
+.linkbar-separator > div {
+  /* background-color: rgba(80, 206, 126,0.8); */
+  background-color: green;
+  width: 0.1rem;
+  height: 3rem;
 }
 
 a.sm,

@@ -3,7 +3,7 @@ import { useRef, useState, type MouseEvent } from "react";
 export default function AudioName() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const startingRef = useRef(false);
-    const [pronounceName, setPronounceName] = useState("Make sure your audio is turned on!");
+    const [pronounceName, setPronounceName] = useState('Make sure your audio is turned on!');
 
     const playName = async (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -35,7 +35,10 @@ export default function AudioName() {
 
     return (
         <>
-            <button className="button" onClick={playName} style={{ fontSize: '1.5rem', fontFamily: 'VT323', cursor: 'pointer'}}>Pronounce my name</button> ({pronounceName})
+        <div style={{textAlign: 'center'}}>
+            <button className="button" onClick={playName} style={{ fontSize: '1.5rem', fontFamily: 'VT323', cursor: 'pointer'}}>Pronounce my name</button><br/>
+            <span className="wheat-highlight">({pronounceName})</span>
+        </div>
         </>
     );
 }
